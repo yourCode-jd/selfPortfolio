@@ -16,13 +16,15 @@
 </head>
 
 <body class="font-rajdhani">
-    <div class="px-5 md:px-8 lg:px-12">
-        <div id="customCursor"
-            class="fixed top-0 left-0 w-8 h-8 rounded-full bg-[#3A4D39] pointer-events-none z-50 transition-all duration-200 ease-out mix-blend-difference text-white text-[10px] flex items-center justify-center">
-            <span id="cursorText"></span>
-        </div>
 
-        <section class="p-0 ">
+    <div id="customCursor"
+        class="fixed top-0 left-0 w-8 h-8 rounded-full bg-[#7A73D1] pointer-events-none z-50 transition-all duration-200 ease-out mix-blend-difference text-white text-[10px] flex items-center justify-center">
+        <span id="cursorText"></span>
+    </div>
+
+    <section class="p-0">
+        <div class="px-5 md:px-8 lg:px-12">
+            <!-- <div id="heroBg" class="absolute top-0 left-0 w-full h-full z-0"></div> -->
             <nav
                 class="px-5 md:px-8 lg:px-12 flex items-center justify-between py-5 fixed left-0 w-full bg-[#3A4D39] bg-opacity-5 backdrop-blur-5xl">
                 <!-- Logo -->
@@ -30,17 +32,17 @@
                 <!-- Hamburger -->
                 <div id="Hamburger" class="w-10 h-auto flex flex-col gap-2 cursor-pointer z-10"
                     onclick="toggleHighlight(), toggleCross()">
-                    <span class="w-full h-1 rounded bg-[#3A4D39]"></span>
-                    <span class="w-full h-1 rounded bg-[#3A4D39]"></span>
-                    <span class="w-full h-1 rounded bg-[#3A4D39]"></span>
+                    <span class="w-full h-1 rounded bg-white"></span>
+                    <span class="w-full h-1 rounded bg-white"></span>
+                    <span class="w-full h-1 rounded bg-white"></span>
                 </div>
                 <!-- Menu -->
                 <div id="slideNavigation" class="flex items-center gap-6">
-                    <a class="text-[#3A4D39] text-3xl md:text-4xl font-medium transition-all hover:after:[''] hover:after:block relative hover:after:absolute hover:after:top-0 hover:after:left-0 p-1 hover:after:bg-[#3A4D39] hover:text-white hover:after:-z-10 hover:after:w-full hover:after:h-full"
+                    <a class="text-[#211C84] text-3xl md:text-4xl font-normal uppercase transition-all hover:after:[''] hover:after:block relative hover:after:absolute hover:after:top-0 hover:after:left-0 p-1 hover:after:bg-white hover:text-[#211C84] hover:after:-z-10 hover:after:w-full hover:after:h-full"
                         href="#">Home</a>
-                    <a class="text-[#3A4D39] text-3xl md:text-4xl font-medium transition-all hover:after:[''] hover:after:block relative hover:after:absolute hover:after:top-0 hover:after:left-0 p-1 hover:after:bg-[#3A4D39] hover:text-white hover:after:-z-10 hover:after:w-full hover:after:h-full"
+                    <a class="text-[#211C84] text-3xl md:text-4xl font-normal uppercase transition-all hover:after:[''] hover:after:block relative hover:after:absolute hover:after:top-0 hover:after:left-0 p-1 hover:after:bg-white hover:text-[#211C84] hover:after:-z-10 hover:after:w-full hover:after:h-full"
                         href="#">About</a>
-                    <a class="text-[#3A4D39] text-3xl md:text-4xl font-medium transition-all hover:after:[''] hover:after:block relative hover:after:absolute hover:after:top-0 hover:after:left-0 p-1 hover:after:bg-[#3A4D39] hover:text-white hover:after:-z-10 hover:after:w-full hover:after:h-full"
+                    <a class="text-[#211C84] text-3xl md:text-4xl font-normal uppercase transition-all hover:after:[''] hover:after:block relative hover:after:absolute hover:after:top-0 hover:after:left-0 p-1 hover:after:bg-white hover:text-[#211C84] hover:after:-z-10 hover:after:w-full hover:after:h-full"
                         href="#">Contact</a>
                 </div>
             </nav>
@@ -53,19 +55,240 @@
                     </h1>
                 </a>
             </div>
-        </section>
-        <section class="max-w-screen-xl mx-auto">
-            <h3 class="text text-5xl text-[#3A4D39] font-bold text-center leading-snug">
+        </div>
+    </section>
+    <!-- <section class="max-w-screen-xl mx-auto ">
+        <div class="px-5 md:px-8 lg:px-12">
+            <h3 class="text-5xl text-white font-bold text-center leading-snug">
                 A personal <span>portfolio</span> is a collection of your work, that
                 is aa go achievements, and skills that highlights
                 <span>web design</span> in your is abilities and professional growth.
                 It serves as A personal to a portfolio in <span>since 2020</span> a
                 collection of your work
             </h3>
-        </section>
+        </div>
+    </section> -->
+
+    <section class="max-w-screen-xl mx-auto">
+        <div class="px-5 md:px-8 lg:px-12">
+            <h3 class="text-container text-5xl text-white font-bold text-center  space-y-4">
+                <div class="line">A personal <span>portfolio</span> is a collection of your work,</div>
+                <div class="line">achievements, and skills that highlight</div>
+                <div class="line"><span>web design</span> abilities and professional growth.</div>
+                <div class="line">It serves as a portfolio since <span>2020</span>.</div>
+            </h3>
+        </div>
+    </section>
 
 
-    </div>
+    <!--  -->
+
+    <section id="heroSection" class="h-screen flex items-center justify-center flex-col">
+        <div class="scaling-circle"></div>
+        <div class="step">
+            <div class="content max-w-7xl mx-auto flex flex-row gap-5 items-center">
+                <div class="w-1/2">
+                    <small class="text-base text-[#211C84] font-medium">My Expertise</small>
+                    <h1 class="text-5xl font-bold text-[#211C84]">Elevated Designs Personalized
+                        the best Experiences
+                    </h1>
+                </div>
+                <p class="text-xl text-white font-medium w-2/5 ml-auto">Business consulting consultants provide expert
+                    advice and
+                    guida
+                    businesses to help them improve their
+                    performance, efficiency, and organizational</p>
+            </div>
+            <div class="content max-w-7xl mx-auto flex flex-row gap-5 items-center">
+                <div class="w-1/2">
+                    <small class="text-base text-[#211C84] font-medium">My Expertise</small>
+                    <h1 class="text-5xl font-bold text-[#211C84]">Elevated Designs Personalized
+                        the best Experiences
+                    </h1>
+                </div>
+                <p class="text-xl text-white font-medium w-2/5 ml-auto">Business consulting consultants provide expert
+                    advice and
+                    guida
+                    businesses to help them improve their
+                    performance, efficiency, and organizational</p>
+            </div>
+            <div class="content max-w-7xl mx-auto flex flex-row gap-5 items-center">
+                <div class="w-1/2">
+                    <small class="text-base text-[#211C84] font-medium">My Expertise</small>
+                    <h1 class="text-5xl font-bold text-[#211C84]">Elevated Designs Personalized
+                        the best Experiences
+                    </h1>
+                </div>
+                <p class="text-xl text-white font-medium w-2/5 ml-auto">Business consulting consultants provide expert
+                    advice and
+                    guida
+                    businesses to help them improve their
+                    performance, efficiency, and organizational</p>
+            </div>
+            <div class="content max-w-7xl mx-auto flex flex-row gap-5 items-center">
+                <div class="w-1/2">
+                    <small class="text-base text-[#211C84] font-medium">My Expertise</small>
+                    <h1 class="text-5xl font-bold text-[#211C84]">Elevated Designs Personalized
+                        the best Experiences
+                    </h1>
+                </div>
+                <p class="text-xl text-white font-medium w-2/5 ml-auto">Business consulting consultants provide expert
+                    advice and
+                    guida
+                    businesses to help them improve their
+                    performance, efficiency, and organizational</p>
+            </div>
+            <div class="content max-w-7xl mx-auto flex flex-row gap-5 items-center">
+                <div class="w-1/2">
+                    <small class="text-base text-[#211C84] font-medium">My Expertise</small>
+                    <h1 class="text-5xl font-bold text-[#211C84]">Elevated Designs Personalized
+                        the best Experiences
+                    </h1>
+                </div>
+                <p class="text-xl text-white font-medium w-2/5 ml-auto">Business consulting consultants provide expert
+                    advice and
+                    guida
+                    businesses to help them improve their
+                    performance, efficiency, and organizational</p>
+            </div>
+            <div class="content max-w-7xl mx-auto flex flex-row gap-5 items-center">
+                <div class="w-1/2">
+                    <small class="text-base text-[#211C84] font-medium">My Expertise</small>
+                    <h1 class="text-5xl font-bold text-[#211C84]">Elevated Designs Personalized
+                        the best Experiences
+                    </h1>
+                </div>
+                <p class="text-xl text-white font-medium w-2/5 ml-auto">Business consulting consultants provide expert
+                    advice and
+                    guida
+                    businesses to help them improve their
+                    performance, efficiency, and organizational</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="steps">
+        <div class="step">
+            <div class="content max-w-7xl mx-auto flex flex-row gap-5 items-center">
+                <div class="w-1/2">
+                    <small class="text-base text-[#211C84] font-medium">My Expertise</small>
+                    <h1 class="text-5xl font-bold text-[#211C84]">Elevated Designs Personalized
+                        the best Experiences
+                    </h1>
+                </div>
+                <p class="text-xl text-white font-medium w-2/5 ml-auto">Business consulting consultants provide
+                    expert
+                    advice and
+                    guida
+                    businesses to help them improve their
+                    performance, efficiency, and organizational</p>
+            </div>
+        </div>
+        <div class="step">
+
+        <div class="content max-w-7xl mx-auto flex flex-row gap-5 items-center">
+            <div class="w-1/2">
+                <small class="text-base text-[#211C84] font-medium">My Expertise</small>
+                <h1 class="text-5xl font-bold text-[#211C84]">Elevated Designs Personalized
+                    the best Experiences
+                </h1>
+            </div>
+            <p class="text-xl text-white font-medium w-2/5 ml-auto">Business consulting consultants provide expert
+                advice and
+                guida
+                businesses to help them improve their
+                performance, efficiency, and organizational</p>
+        </div>
+        </div>
+        <div class="step">
+        
+        <div class="content max-w-7xl mx-auto flex flex-row gap-5 items-center">
+            <div class="w-1/2">
+                <small class="text-base text-[#211C84] font-medium">My Expertise</small>
+                <h1 class="text-5xl font-bold text-[#211C84]">Elevated Designs Personalized
+                    the best Experiences
+                </h1>
+            </div>
+            <p class="text-xl text-white font-medium w-2/5 ml-auto">Business consulting consultants provide expert
+                advice and
+                guida
+                businesses to help them improve their
+                performance, efficiency, and organizational</p>
+        </div>
+        </div>
+        <div class="step">
+
+        <div class="content max-w-7xl mx-auto flex flex-row gap-5 items-center">
+            <div class="w-1/2">
+                <small class="text-base text-[#211C84] font-medium">My Expertise</small>
+                <h1 class="text-5xl font-bold text-[#211C84]">Elevated Designs Personalized
+                    the best Experiences
+                </h1>
+            </div>
+            <p class="text-xl text-white font-medium w-2/5 ml-auto">Business consulting consultants provide expert
+                advice and
+                guida
+                businesses to help them improve their
+                performance, efficiency, and organizational</p>
+        </div>
+        </div>
+        <div class="step">
+
+        <div class="content max-w-7xl mx-auto flex flex-row gap-5 items-center">
+            <div class="w-1/2">
+                <small class="text-base text-[#211C84] font-medium">My Expertise</small>
+                <h1 class="text-5xl font-bold text-[#211C84]">Elevated Designs Personalized
+                    the best Experiences
+                </h1>
+            </div>
+            <p class="text-xl text-white font-medium w-2/5 ml-auto">Business consulting consultants provide expert
+                advice and
+                guida
+                businesses to help them improve their
+                performance, efficiency, and organizational</p>
+        </div>
+        </div>
+        <div class="step">
+
+        <div class="content max-w-7xl mx-auto flex flex-row gap-5 items-center">
+            <div class="w-1/2">
+                <small class="text-base text-[#211C84] font-medium">My Expertise</small>
+                <h1 class="text-5xl font-bold text-[#211C84]">Elevated Designs Personalized
+                    the best Experiences
+                </h1>
+            </div>
+            <p class="text-xl text-white font-medium w-2/5 ml-auto">Business consulting consultants provide expert
+                advice and
+                guida
+                businesses to help them improve their
+                performance, efficiency, and organizational</p>
+        </div>
+        </div>
+    </div> -->
+
+    <!-- triangle -->
+
+    <section id="triangleSection" class="h-screenflex items-center justify-center relative overflow-hidden">
+        <!-- Triangle 1 -->
+        <svg class="triangle w-[350px]" id="triangle1" viewBox="0 0 100 100">
+            <polygon points="50,0 100,100 0,100" fill="#ffffff" />
+        </svg>
+
+        <!-- Triangle 2 -->
+        <svg class="triangle w-[350px]" id="triangle2" viewBox="0 0 100 100">
+            <polygon points="50,0 100,100 0,100" fill="#ffffff" />
+        </svg>
+
+        <!-- Triangle 3 -->
+        <svg class="triangle w-[350px]" id="triangle3" viewBox="0 0 100 100">
+            <polygon points="50,0 100,100 0,100" fill="#ffffff" />
+        </svg>
+    </section>
+
+
+
+
+
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
