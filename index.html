@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Rajdhani -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body class="font-rajdhani">
+    <div class="px-5 md:px-8 lg:px-12">
+        <div id="customCursor"
+            class="fixed top-0 left-0 w-8 h-8 rounded-full bg-[#3A4D39] pointer-events-none z-50 transition-all duration-200 ease-out mix-blend-difference text-white text-[10px] flex items-center justify-center">
+            <span id="cursorText"></span>
+        </div>
+
+        <section class="p-0 ">
+            <nav
+                class="px-5 md:px-8 lg:px-12 flex items-center justify-between py-5 fixed left-0 w-full bg-[#3A4D39] bg-opacity-5 backdrop-blur-5xl">
+                <!-- Logo -->
+                <h1 class="text-4xl font-bold uppercase cursor-pointer">Logo</h1>
+                <!-- Hamburger -->
+                <div id="Hamburger" class="w-10 h-auto flex flex-col gap-2 cursor-pointer z-10"
+                    onclick="toggleHighlight(), toggleCross()">
+                    <span class="w-full h-1 rounded bg-[#3A4D39]"></span>
+                    <span class="w-full h-1 rounded bg-[#3A4D39]"></span>
+                    <span class="w-full h-1 rounded bg-[#3A4D39]"></span>
+                </div>
+                <!-- Menu -->
+                <div id="slideNavigation" class="flex items-center gap-6">
+                    <a class="text-[#3A4D39] text-3xl md:text-4xl font-medium transition-all hover:after:[''] hover:after:block relative hover:after:absolute hover:after:top-0 hover:after:left-0 p-1 hover:after:bg-[#3A4D39] hover:text-white hover:after:-z-10 hover:after:w-full hover:after:h-full"
+                        href="#">Home</a>
+                    <a class="text-[#3A4D39] text-3xl md:text-4xl font-medium transition-all hover:after:[''] hover:after:block relative hover:after:absolute hover:after:top-0 hover:after:left-0 p-1 hover:after:bg-[#3A4D39] hover:text-white hover:after:-z-10 hover:after:w-full hover:after:h-full"
+                        href="#">About</a>
+                    <a class="text-[#3A4D39] text-3xl md:text-4xl font-medium transition-all hover:after:[''] hover:after:block relative hover:after:absolute hover:after:top-0 hover:after:left-0 p-1 hover:after:bg-[#3A4D39] hover:text-white hover:after:-z-10 hover:after:w-full hover:after:h-full"
+                        href="#">Contact</a>
+                </div>
+            </nav>
+
+            <!-- Hero -->
+            <div class="flex items-center justify-center h-screen">
+                <a href="#">
+                    <h1 id="bannerTitle" class="text-[80px] md:text-[150px] lg:text-[200px] xl:text-[250px] font-bold">
+                        welcome
+                    </h1>
+                </a>
+            </div>
+        </section>
+        <section class="max-w-screen-xl mx-auto">
+            <h3 class="text text-5xl text-[#3A4D39] font-bold text-center leading-snug">
+                A personal <span>portfolio</span> is a collection of your work, that
+                is aa go achievements, and skills that highlights
+                <span>web design</span> in your is abilities and professional growth.
+                It serves as A personal to a portfolio in <span>since 2020</span> a
+                collection of your work
+            </h3>
+        </section>
+
+
+    </div>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="custom.js"></script>
+</body>
+
+</html>
