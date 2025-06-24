@@ -134,11 +134,16 @@ h3 span::after {
     z-index: -1;
 }
 
+small {
+    -webkit-text-stroke: 1px #211c84;
+    position: relative;
+}
+
 /*  */
 
 #heroSection {
     position: relative;
-    height: 100vh;
+    height: 150vh;
     overflow: hidden;
     z-index: 0;
 }
@@ -150,9 +155,9 @@ h3 span::after {
     transform: translate(-50%, 0) scale(0.8);
     width: 100vmax;
     height: 100vmax;
-    /* background-color: #ffffff; */
+    background-color: #ffffff;
     /* background: #7A73D1; */
-    background: linear-gradient(0deg, rgba(122, 115, 209, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    /* background: linear-gradient(0deg, rgba(122, 115, 209, 1) 50%, rgba(255, 255, 255, 1) 100%); */
     border-radius: 50%;
     z-index: -1;
 }
@@ -175,6 +180,7 @@ h3 span::after {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 50px;
 }
 
 

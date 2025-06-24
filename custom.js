@@ -91,16 +91,17 @@ gsap.to(".scaling-circle", {
 document.querySelectorAll(".content").forEach((content, index) => {
   gsap.to(content, {
     opacity: 1,
-    y: 50,
+    y: 100,
     duration: 1,
+    filter: "blur(0px)",
     ease: "power2.out",
     scrollTrigger: {
       trigger: content,
-      start: "top top+=250",
+      start: "top bottom+=200",
       end: "bottom center",
-      scrub: true,
+      scrub: 2,
       toggleActions: "play none none reverse",
-      markers: true,
+      markers: false,
     },
   });
 });
@@ -119,9 +120,9 @@ document.querySelectorAll(".step").forEach((step, index) => {
       scrollTrigger: {
         trigger: step,
         start: "top top",
-        end: "bottom center",
+        end: "top center",
         scrub: true,
-        pin: true,
+        pin: false,
         markers: false,
       },
     }
@@ -135,8 +136,8 @@ const tl = gsap.timeline({
   scrollTrigger: {
     trigger: "#triangleSection",
     start: "top top",
-    end: "+=1000",
-    scrub: 1,
+    end: "+=950",
+    scrub: 3,
     pin: true,
     markers: false,
   },
@@ -168,4 +169,28 @@ tl.to(["#triangle2", "#triangle3"], {
   duration: 1.5,
   stagger: 0.3,
   ease: "power2.out",
+});
+
+tl.to("#triangle1 + a", {
+  opacity: 1,
+  duration: 2,
+  ease: "power1.inOut",
+});
+
+// Show Triangle 2 anchor
+tl.to(
+  "#triangle2 + a",
+  {
+    opacity: 1,
+    duration: 2,
+    ease: "power1.inOut",
+  },
+  "-=1"
+); // overlaps slightly with triangle2 animation end
+
+// Show Triangle 3 anchor
+tl.to("#triangle3 + a", {
+  opacity: 1,
+  duration: 2,
+  ease: "power1.inOut",
 });
