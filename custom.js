@@ -194,3 +194,59 @@ tl.to("#triangle3 + a", {
   duration: 2,
   ease: "power1.inOut",
 });
+
+// Show Triangle popup
+function openPopup(id) {
+  event.preventDefault();
+
+  const popup = document.getElementById("popup" + id);
+
+  // 🛑 Prevent re-clicking the same anchor
+  if (popup.classList.contains("active")) {
+    return; // already open, do nothing
+  }
+
+  // Close any other open popups
+  document.querySelectorAll(".popup").forEach((p) => {
+    if (p.classList.contains("active")) {
+      gsap.to(p, {
+        x: "100%",
+        duration: 0.5,
+        ease: "power2.inOut",
+        onComplete: () => {
+          p.style.display = "none";
+          p.classList.remove("active");
+        },
+      });
+    }
+  });
+
+  // Show the target popup
+  popup.style.display = "block";
+  popup.classList.add("active");
+
+  gsap.fromTo(
+    popup,
+    { x: "100%" },
+    {
+      x: "0%",
+      duration: 0.7,
+      ease: "power3.out",
+    }
+  );
+}
+
+function closePopup() {
+  const activePopup = document.querySelector(".popup.active");
+  if (activePopup) {
+    gsap.to(activePopup, {
+      x: "100%",
+      duration: 0.5,
+      ease: "power2.inOut",
+      onComplete: () => {
+        activePopup.style.display = "none";
+        activePopup.classList.remove("active");
+      },
+    });
+  }
+}
