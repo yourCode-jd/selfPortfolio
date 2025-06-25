@@ -7,6 +7,14 @@
 //   });
 // });
 
+//
+gsap.to(".scroll-indicator", {
+  y: "100%", // move full height of parent
+  duration: 10, // slower animation
+  ease: "none",
+  repeat: -1, // infinite loop
+});
+
 // toggle menu
 function toggleHighlight() {
   const element = document.getElementById("slideNavigation");
@@ -250,3 +258,76 @@ function closePopup() {
     });
   }
 }
+
+// about
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray(".gsap-fade").forEach((el, i) => {
+  gsap.from(el, {
+    opacity: 0,
+    x: -50,
+    filter: "blur(10px)",
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: el,
+      start: "top 85%",
+      toggleActions: "play none none reverse",
+    },
+    delay: i * 0.1, // Stagger effect
+  });
+});
+
+// progress bar
+gsap.registerPlugin(ScrollTrigger);
+
+document.querySelectorAll(".progress-bar").forEach((bar) => {
+  const percentage = +bar.getAttribute("data-percentage");
+  const label = bar.querySelector(".percentage-label");
+
+  // Timeline for bar fill + label
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: bar,
+      start: "top 90%",
+      toggleActions: "play none none reverse",
+    },
+  });
+
+  // Animate width
+  tl.to(bar, {
+    width: percentage + "%",
+    duration: 1.5,
+    ease: "power2.out",
+  });
+
+  // Animate number count and label fade-in
+  tl.to(
+    label,
+    {
+      opacity: 1,
+      duration: 0.3,
+      ease: "power1.inOut",
+    },
+    "<+=0.2"
+  ); // Starts slightly after the width animation
+
+  // Count up the number
+  tl.fromTo(
+    label,
+    {
+      innerText: 0,
+    },
+    {
+      innerText: percentage,
+      duration: 1.2,
+      ease: "power1.out",
+      snap: { innerText: 1 },
+      onUpdate: function () {
+        label.textContent = Math.round(label.innerText) + "%";
+      },
+    },
+    "-=1.2"
+  );
+});

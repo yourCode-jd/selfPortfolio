@@ -14,6 +14,11 @@ body {
     color: #36454F;
 }
 
+body::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
 h1,
 h2,
 h3,
@@ -139,6 +144,11 @@ small {
     position: relative;
 }
 
+.textStroke {
+    -webkit-text-stroke: 1px #ffffff;
+    position: relative;
+}
+
 /*  */
 
 #heroSection {
@@ -169,6 +179,36 @@ small {
     will-change: opacity, transform, filter;
 }
 
+.scroll-indicator::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff97;
+    transform: translateX(-50%) rotate(0deg);
+    animation: rotateFade 2s linear infinite;
+    filter: blur(2px);
+}
+
+@keyframes rotateFade {
+    0% {
+        /* opacity: 0.5; */
+        transform: translateX(-50%) rotate(0deg);
+    }
+
+    50% {
+        /* opacity: 0.3; */
+        transform: translateX(-50%) rotate(180deg);
+    }
+
+    100% {
+        /* opacity: 1; */
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
 .content {
     opacity: 0;
     transform: translateY(50px);
@@ -187,13 +227,60 @@ small {
     gap: 50px;
 }
 
+/* .stepContent {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+} */
+
+/* .stepContent::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(77, 85, 204, 1) 0%, rgba(181, 168, 213, 1) 100%);
+    z-index: -1;
+    filter: blur(1px);
+}
+
+*/
+.stepContent .content-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    rotate: 45deg;
+    filter: blur(2px);
+    transform: translateX(-50%);
+    animation: fadeDot 2s linear infinite;
+}
+
+@keyframes fadeDot {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
 
 /* triangle */
 #triangleSection {
-    height: 200vh;
+    height: 215vh;
     position: relative;
     /* background: #4D55CC; */
-    background: linear-gradient(180deg, rgba(122, 115, 209, 1) 10%, rgba(255, 255, 255, 1) 80%);
+    /* background: linear-gradient(180deg, rgba(122, 115, 209, 1) 10%, rgba(255, 255, 255, 1) 80%); */
 
     /* background: radial-gradient(circle, rgba(122, 115, 209, 1) 20%, rgba(33, 28, 132, 1) 100%); */
     overflow: hidden;
@@ -239,3 +326,6 @@ small {
 .popup.active {
     pointer-events: auto;
 }
+/* .progress-bar {
+    background-image: radial-gradient(circle, #7a73d1, #736dd0, #6b67cf, #6362ce, #5a5ccd, #5355c7, #4b4dc0, #4346ba, #3b3bac, #33319f, #2a2691, #211c84);
+} */
