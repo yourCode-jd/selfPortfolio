@@ -522,62 +522,69 @@
 
     <!-- Portfolio -->
 
-    <section class="py-32 relative">
+    <section class="py-32 relative overflow-hidden">
+        <div
+            class="absolute top-0 left-0 w-full h-full bg-[url('images/liquid.jpeg')] bg-cover -z-10 blur-[70px] opacity-40 ">
+        </div>
         <div class="px-5 md:px-8 lg:px-12">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center pt-10 pb-7">
-                    <h2 class=" text-white text-[200px] leading-[0.8] font-bold glowing-text heading-text relative">
-                        Latest<br>
-                        Portfolio</h2>
-                    <h3 class="text-white text-5xl font-bold mt-12 mb-6 glowing-text subheading-text">Transforming Ideas
-                        into Exceptional</h3>
-                    <p class="text-white text-2xl font-medium max-w-screen-md mx-auto glowing-text paragraph-text">
-                        Business consulting consultants provide expert advice and guida businesses to help them improve
-                        their performance, efficiency, and organizational
-                    </p>
-                </div>
+            <div class="max-w-7xl mx-auto z-10">
 
-                <div class="flex gap-52 items-center justify-center h-screen max-w-screen-lg mx-auto">
+                <div class="flex gap-44 items-center justify-center max-w-screen-xl mx-auto">
 
                     <!-- Left: Card Stack -->
-                    <div id="cardStack" class="relative w-[500px] h-[600px]">
+                    <div id="cardStack" class="gsap-fade relative w-[550px] h-[650px] mr-10">
                         <!-- Cards (add as many as needed) -->
                         <div data-index="1"
-                            class="card absolute w-full h-full bg-white text-black rounded shadow-xl flex items-center justify-center flex-col">
-                            <div class="text-xs text-black">ONE</div>
-                            <div class="text-7xl font-bold">1</div>
+                            class="card absolute w-full h-full bg-white text-black rounded-2xl shadow-xl flex items-center justify-center flex-col p-10 overflow-hidden">
+                            <img src="images/03.png" alt="Portfolio 1" class="w-full h-full object-cover rounded-2xl">
+                            <div class="absolute bottom-10 left-0 right-0 text-center hidden">
+                                <div class="text-xs text-black">ONE</div>
+                                <div class="text-7xl font-bold">1</div>
+                            </div>
                         </div>
                         <div data-index="2"
-                            class="card absolute w-full h-full bg-white text-black rounded shadow-xl flex items-center justify-center flex-col">
-                            <div class="text-xs text-black">TWO</div>
-                            <div class="text-7xl font-bold">2</div>
+                            class="card absolute w-full h-full  bg-white text-black rounded-2xl shadow-xl flex items-center justify-center flex-col p-10 overflow-hidden">
+                            <img src="images/01.png" alt="Portfolio 1" class="w-full h-full object-cover rounded-2xl">
+                            <div class="absolute bottom-10 left-0 right-0 text-center hidden">
+                                <div class="text-xs text-black">TWO</div>
+                                <div class="text-7xl font-bold">2</div>
+                            </div>
                         </div>
                         <div data-index="3"
-                            class="card absolute w-full h-full bg-white text-black rounded shadow-xl flex items-center justify-center flex-col">
-                            <div class="text-xs text-black">THREE</div>
-                            <div class="text-7xl font-bold">3</div>
+                            class="card absolute w-full h-full  bg-white text-black rounded-2xl shadow-xl flex items-center justify-center flex-col p-10 overflow-hidden">
+                            <img src="images/02.png" alt="Portfolio 1" class="w-full h-full object-cover rounded-2xl">
+                            <div class="absolute bottom-10 left-0 right-0 text-center hidden">
+                                <div class="text-xs text-black">THREE</div>
+                                <div class="text-7xl font-bold">3</div>
+                            </div>
                         </div>
                         <div data-index="4"
-                            class="card absolute w-full h-full bg-white text-black rounded shadow-xl flex items-center justify-center flex-col">
-                            <div class="text-xs text-black">FOUR</div>
-                            <div class="text-7xl font-bold">4</div>
+                            class="card absolute w-full h-full  bg-white text-black rounded-2xl shadow-xl flex items-center justify-center flex-col p-10 overflow-hidden">
+                            <img src="images/04.png" alt="Portfolio 1" class="w-full h-full object-cover rounded-2xl">
+                            <div class="absolute bottom-10 left-0 right-0 text-center hidden">
+                                <div class="text-xs text-black">FOUR</div>
+                                <div class="text-7xl font-bold">4</div>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Right: List Items -->
-                    <div class="space-y-6">
-                        <div class="font-bold text-5xl text-white mb-10">PORTFOLIO LIST</div>
-                        <div class="listText text-white tracking-[2px] uppercase text-xl font-medium cursor-pointer list-item list-none hover:-translate-x-4 transition-all duration-200"
-                            data-target="1"><span>01</span> <span></span>
+                    <div class="space-y-14 text-center relative">
+                        <h2
+                            class=" absolute rotate-90 left-36 top-1/2 -translate-y-1/2 text-transparent text-[130px] leading-[0.8] font-bold  textStroke gsap-fade heading-text">
+                            Portfolio</h2>
+                        <!-- <div class="font-bold text-5xl text-white mb-10">PORTFOLIO LIST</div> -->
+                        <div class="listText text-white tracking-[2px] uppercase text-xl font-medium cursor-pointer list-item list-none hover:-translate-x-4 gsap-fade transition-all duration-200"
+                            data-target="1"><span>01</span>
                             Portfolio </div>
-                        <div class="listText text-white tracking-[2px] uppercase text-xl  font-medium cursor-pointer list-item list-none hover:-translate-x-4 transition-all duration-200"
-                            data-target="2"><span>02</span> <span></span>
+                        <div class="listText text-white tracking-[2px] uppercase text-xl  font-medium cursor-pointer list-item list-none hover:-translate-x-4 gsap-fade transition-all duration-200"
+                            data-target="2"><span>02</span>
                             Portfolio </div>
-                        <div class="listText text-white tracking-[2px] uppercase text-xl font-medium cursor-pointer list-item list-none hover:-translate-x-4 transition-all duration-200"
-                            data-target="3"><span>03</span> <span></span>
+                        <div class="listText text-white tracking-[2px] uppercase text-xl font-medium cursor-pointer list-item list-none hover:-translate-x-4 gsap-fade transition-all duration-200"
+                            data-target="3"><span>03</span>
                             Portfolio </div>
-                        <div class="listText text-white tracking-[2px] uppercase text-xl font-medium cursor-pointer list-item list-none
-                        hover:-translate-x-4 transition-all duration-200" data-target="4"><span>04</span> <span></span>
+                        <div class="listText text-white gsap-fade tracking-[2px] uppercase text-xl font-medium cursor-pointer list-item list-none
+                        hover:-translate-x-4 transition-all duration-200" data-target="4"><span>04</span>
                             Portfolio </div>
                     </div>
                 </div>

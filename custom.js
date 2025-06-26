@@ -407,29 +407,3 @@ document.querySelectorAll(".list-item").forEach((item) => {
 });
 
 // card title
-
-gsap.registerPlugin(ScrollTrigger);
-
-function animateTyping(selector, delay = 0.2, duration = 0.05) {
-  const text = new SplitType(selector, { types: "chars" });
-
-  gsap.from(text.chars, {
-    scrollTrigger: {
-      trigger: selector,
-      start: "top 80%",
-    },
-    opacity: 0,
-    y: 20,
-    stagger: {
-      each: duration,
-      from: "start",
-    },
-    ease: "power2.out",
-    delay,
-  });
-}
-
-// Animate each text block separately
-animateTyping(".heading-text", 0, 0.03); // Bigger text = slower speed
-animateTyping(".subheading-text", 0.3, 0.04);
-animateTyping(".paragraph-text", 0.6, 0.015);
