@@ -89,7 +89,7 @@ gsap.to(".scaling-circle", {
   ease: "power2.out",
   scrollTrigger: {
     trigger: "#heroSection",
-    start: "10px center",
+    start: "top 800px",
     end: "+=800",
     scrub: 3,
   },
@@ -176,6 +176,8 @@ tl.to(["#triangle2", "#triangle3"], {
   opacity: 1,
   duration: 1.5,
   stagger: 0.3,
+  // rotate: 360,
+  scale: 1,
   ease: "power2.out",
 });
 
@@ -209,7 +211,7 @@ function openPopup(id) {
 
   const popup = document.getElementById("popup" + id);
 
-  // 🛑 Prevent re-clicking the same anchor
+  // Prevent re-clicking the same anchor
   if (popup.classList.contains("active")) {
     return; // already open, do nothing
   }
@@ -258,6 +260,33 @@ function closePopup() {
     });
   }
 }
+
+// designer text
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.fromTo(
+  ".gsap-text-stroke",
+  {
+    x: -200, // start from left
+    opacity: 0,
+    filter: "blur(10px)",
+  },
+  {
+    x: 0,
+    opacity: 1,
+    filter: "blur(0px)",
+    duration: 1.5,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: ".gsap-text-stroke",
+      start: "top 80%",
+      end: "top 10%", // add an end point
+      toggleActions: "play reverse none none ", // stronger control
+      markers: false,
+    },
+  }
+);
 
 // about
 
@@ -331,3 +360,76 @@ document.querySelectorAll(".progress-bar").forEach((bar) => {
     "-=1.2"
   );
 });
+
+// portfolio cards
+
+const cards = Array.from(document.querySelectorAll(".card"));
+let activeIndex = 1;
+
+function updateCardStack(targetIndex) {
+  cards.forEach((card) => {
+    const index = +card.dataset.index;
+    const depth = index - targetIndex;
+
+    const z = 100 - Math.abs(depth);
+    const scale = 1 - Math.abs(depth) * 0.05;
+    const opacity = depth < 4 ? 1 - Math.abs(depth) * 0.2 : 0;
+
+    // Offset left for previous cards
+    const x = depth < 0 ? depth * 50 : 0;
+    const y = depth * 5;
+
+    gsap.to(card, {
+      scale,
+      opacity,
+      zIndex: z,
+      x,
+      y,
+      duration: 0.5,
+      ease: "power3.out",
+    });
+  });
+
+  activeIndex = targetIndex;
+}
+
+// Initial stack
+updateCardStack(activeIndex);
+
+// List click handling
+document.querySelectorAll(".list-item").forEach((item) => {
+  item.addEventListener("click", () => {
+    const target = +item.dataset.target;
+    if (target !== activeIndex) {
+      updateCardStack(target);
+    }
+  });
+});
+
+// card title
+
+gsap.registerPlugin(ScrollTrigger);
+
+function animateTyping(selector, delay = 0.2, duration = 0.05) {
+  const text = new SplitType(selector, { types: "chars" });
+
+  gsap.from(text.chars, {
+    scrollTrigger: {
+      trigger: selector,
+      start: "top 80%",
+    },
+    opacity: 0,
+    y: 20,
+    stagger: {
+      each: duration,
+      from: "start",
+    },
+    ease: "power2.out",
+    delay,
+  });
+}
+
+// Animate each text block separately
+animateTyping(".heading-text", 0, 0.03); // Bigger text = slower speed
+animateTyping(".subheading-text", 0.3, 0.04);
+animateTyping(".paragraph-text", 0.6, 0.015);

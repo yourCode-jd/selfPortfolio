@@ -235,19 +235,60 @@ small {
     position: relative;
 } */
 
-/* .stepContent::after {
+.heading-text::after,
+.heading-text::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: -20px;
-    width: 1px;
-    height: 100%;
+    top: 10%;
+    left: 10%;
+    width: 100px;
+    height: 100px;
+    /* background-color: white; */
     background: linear-gradient(90deg, rgba(77, 85, 204, 1) 0%, rgba(181, 168, 213, 1) 100%);
-    z-index: -1;
-    filter: blur(1px);
+    rotate: 40deg;
+    filter: blur(10px);
+    transform: translateX(-50%);
+    animation: fadeDot 3s linear infinite;
 }
 
-*/
+.heading-text::before {
+    top: 80%;
+    left: auto;
+    right: 10%;
+    width: 300px;
+    height: 300px;
+    filter: blur(9px);
+    rotate: 60deg;
+}
+
+.listText {
+    position: relative;
+}
+
+.listText span:first-child {
+    margin-right: 0;
+}
+
+.listText span+span {
+    /* content: ''; */
+    position: relative;
+    /* top: 50%; */
+    /* right: 100%; */
+    width: 10px;
+    height: 2px;
+    background-color: #ffffff;
+    /* transform: translateY(-50%); */
+    transition: all 0.3s ease-in-out;
+    will-change: width;
+    /* filter: blur(2px); */
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.listText:hover span+span {
+    width: 50%;
+}
+
 .stepContent .content-bg::before {
     content: '';
     position: absolute;
@@ -277,7 +318,7 @@ small {
 
 /* triangle */
 #triangleSection {
-    height: 215vh;
+    height: 220vh;
     position: relative;
     /* background: #4D55CC; */
     /* background: linear-gradient(180deg, rgba(122, 115, 209, 1) 10%, rgba(255, 255, 255, 1) 80%); */
@@ -291,6 +332,7 @@ small {
     width: 350px;
     height: 350px;
 }
+
 
 #triangle1 {
     top: 10%;
@@ -307,16 +349,16 @@ small {
     opacity: 0;
 }
 
-/* Bottom Left */
 #triangle2 {
     top: 25.5%;
     left: 31.5%;
+    scale: 0.2;
 }
 
-/* Bottom Right */
 #triangle3 {
     top: 25.5%;
     right: 31.5%;
+    scale: 0.2;
 }
 
 .popup {
@@ -327,6 +369,10 @@ small {
     pointer-events: auto;
 }
 
-/* .progress-bar {
-    background-image: radial-gradient(circle, #7a73d1, #736dd0, #6b67cf, #6362ce, #5a5ccd, #5355c7, #4b4dc0, #4346ba, #3b3bac, #33319f, #2a2691, #211c84);
-} */
+/* card */
+
+
+.card {
+    transition: all 0.3s ease;
+    will-change: transform, opacity;
+}

@@ -42,7 +42,7 @@
         <div class="px-5 md:px-8 lg:px-12">
             <!-- <div id="heroBg" class="absolute top-0 left-0 w-full h-full z-0"></div> -->
             <nav
-                class="px-5 md:px-8 lg:px-12 flex items-center justify-between py-5 fixed left-0 w-full bg-[#3A4D39] bg-opacity-5 backdrop-blur-5xl z-20">
+                class="px-5 md:px-8 lg:px-12 flex items-center justify-between py-5 relative left-0 w-full bg-[#3A4D39] bg-opacity-5 backdrop-blur-5xl z-20">
                 <!-- Logo -->
                 <h1 class="text-4xl font-bold uppercase cursor-pointer">Logo</h1>
                 <!-- Hamburger -->
@@ -99,7 +99,7 @@
         <div class="step">
             <div
                 class="content w-full max-w-7xl mx-auto flex justify-center flex-col items-center border-[#211c84] rounded-lg">
-                <small class="text-8xl font-bold stroke-text text-transparent">My Expertise</small>
+                <small class="text-[135px] leading-[1] font-bold stroke-text text-transparent">My Expertise</small>
                 <p class="text-xl text-[#211c84] font-medium w-3/5 text-center mt-3">
                     Business consulting consultants provide expert advice and guida
                     businesses to help them improve their performance, efficiency, and
@@ -153,9 +153,17 @@
     <!-- triangle -->
 
     <section id="triangleSection" class="flex items-center justify-center relative overflow-hidden">
+
         <div
-            class="absolute top-0 left-0 w-full h-full  bg-[url('images/blob-bg.svg')] bg-cover z-0 animate-pulse opacity-80 blur-3xl">
+            class="absolute top-0 left-0 w-full h-full  bg-[url('images/blob-bg.svg')] bg-cover z-0 animate-pulse opacity-60 blur-3xl">
         </div>
+
+        <!-- designer -->
+        <h2
+            class="gsap-text-stroke textStroke text-transparent text-[500px] font-bold text-center absolute z-0 top-10 left-0 w-full h-full leading-[0.8] opacity-50 blur-sm">
+            UX UI Designer
+        </h2>
+
         <!-- Triangle 1 -->
         <div class="triangle-container">
             <!-- Popup hidden by default -->
@@ -239,7 +247,6 @@
         </div>
 
     </section>
-
 
     <!-- About  -->
 
@@ -367,24 +374,25 @@
         </div>
     </section>
 
-
     <!-- progress bar -->
 
     <section class="z-10 py-32 relative">
         <div class="px-5 md:px-8 lg:px-12">
             <div class="max-w-7xl mx-auto">
-                <div class="mb-6 items-center">
+                <div class="mb-16 items-center">
                     <span
                         class=" max-w-md mr-auto gsap-fade textStroke text-9xl font-bold stroke-text text-transparent">Skills
                     </span>
                 </div>
                 <div class="stepContent  w-full">
-                    <div class="w-full flex flex-col gap-4 max-w-screen-lg mx-auto">
+                    <div class="w-full flex flex-col gap-12 max-w-screen-lg mx-auto">
 
                         <!-- Single Progress Bar -->
-                        <div class="skill">
-                            <div class="text-2xl text-white font-normal mb-2">HTML</div>
-                            <div class="progress-bar-wrapper bg-[#B5A8D5] gsap-fade bg-opacity-10 w-full h-6 ">
+                        <div class="skill relative gsap-fade">
+                            <div
+                                class="absolute -top-5 -left-10 text-5xl textStroke text-transparent font-bold  opacity-60 mb-2">
+                                HTML</div>
+                            <div class="progress-bar-wrapper bg-[#B5A8D5]  bg-opacity-10 w-full h-10 ">
                                 <div data-percentage="98"
                                     class="progress-bar h-full  bg-gradient-to-r  from-[#4D55CC] to-white w-0">
                                     <span
@@ -393,9 +401,11 @@
                             </div>
                         </div>
 
-                        <div class="skill">
-                            <div class="text-2xl text-white font-normal mb-2">CSS</div>
-                            <div class="progress-bar-wrapper bg-[#B5A8D5] gsap-fade bg-opacity-10 w-full h-6 ">
+                        <div class="skill relative gsap-fade">
+                            <div
+                                class="absolute -top-5 -left-10 text-5xl textStroke text-transparent font-bold  opacity-60 mb-2">
+                                CSS</div>
+                            <div class="progress-bar-wrapper bg-[#B5A8D5]  bg-opacity-10 w-full h-10 ">
                                 <div data-percentage="95"
                                     class="progress-bar h-full  bg-gradient-to-r  from-[#4D55CC] to-white w-0">
                                     <span
@@ -404,9 +414,12 @@
                             </div>
                         </div>
 
-                        <div class="skill">
-                            <div class="text-2xl text-white font-normal mb-2">Javascript</div>
-                            <div class="progress-bar-wrapper bg-[#B5A8D5] gsap-fade bg-opacity-10 w-full h-6 ">
+                        <div class="skill relative gsap-fade">
+                            <div
+                                class="absolute -top-5 -left-10 text-5xl textStroke text-transparent font-bold  opacity-60 mb-2">
+                                Javascript
+                            </div>
+                            <div class="progress-bar-wrapper bg-[#B5A8D5]  bg-opacity-10 w-full h-10 ">
                                 <div data-percentage="60"
                                     class="progress-bar h-full  bg-gradient-to-r  from-[#4D55CC] to-white w-0">
                                     <span
@@ -415,9 +428,11 @@
                             </div>
                         </div>
 
-                        <div class="skill">
-                            <div class="text-2xl text-white font-normal mb-2">GSAP</div>
-                            <div class="progress-bar-wrapper bg-[#B5A8D5] gsap-fade bg-opacity-10 w-full h-6 ">
+                        <div class="skill relative gsap-fade">
+                            <div
+                                class="absolute -top-5 -left-10 text-5xl textStroke text-transparent font-bold  opacity-60 mb-2">
+                                GSAP</div>
+                            <div class="progress-bar-wrapper bg-[#B5A8D5]  bg-opacity-10 w-full h-10 ">
                                 <div data-percentage="75"
                                     class="progress-bar h-full  bg-gradient-to-r  from-[#4D55CC] to-white w-0">
                                     <span
@@ -426,9 +441,11 @@
                             </div>
                         </div>
 
-                        <div class="skill">
-                            <div class="text-2xl text-white font-normal mb-2">Figma</div>
-                            <div class="progress-bar-wrapper bg-[#B5A8D5] gsap-fade bg-opacity-10 w-full h-6 ">
+                        <div class="skill relative gsap-fade">
+                            <div
+                                class="absolute -top-5 -left-10 text-5xl textStroke text-transparent font-bold  opacity-60 mb-2">
+                                Figma</div>
+                            <div class="progress-bar-wrapper bg-[#B5A8D5]  bg-opacity-10 w-full h-10 ">
                                 <div data-percentage="80"
                                     class="progress-bar h-full  bg-gradient-to-r  from-[#4D55CC] to-white w-0">
                                     <span
@@ -437,9 +454,12 @@
                             </div>
                         </div>
 
-                        <div class="skill">
-                            <div class="text-2xl text-white font-normal mb-2">Photoshop</div>
-                            <div class="progress-bar-wrapper bg-[#B5A8D5] gsap-fade bg-opacity-10 w-full h-6 ">
+                        <div class="skill relative gsap-fade">
+                            <div
+                                class="absolute -top-5 -left-10 text-5xl textStroke text-transparent font-bold  opacity-60 mb-2">
+                                Photoshop
+                            </div>
+                            <div class="progress-bar-wrapper bg-[#B5A8D5]  bg-opacity-10 w-full h-10 ">
                                 <div data-percentage="85"
                                     class="progress-bar h-full  bg-gradient-to-r  from-[#4D55CC] to-white w-0">
                                     <span
@@ -449,9 +469,12 @@
                         </div>
 
 
-                        <div class="skill">
-                            <div class="text-2xl text-white font-normal mb-2">Shopify</div>
-                            <div class="progress-bar-wrapper bg-[#B5A8D5] gsap-fade bg-opacity-10 w-full h-6 ">
+                        <div class="skill relative gsap-fade">
+                            <div
+                                class="absolute -top-5 -left-10 text-5xl textStroke text-transparent font-bold  opacity-60 mb-2">
+                                Shopify
+                            </div>
+                            <div class="progress-bar-wrapper bg-[#B5A8D5]  bg-opacity-10 w-full h-10 ">
                                 <div data-percentage="55"
                                     class="progress-bar h-full  bg-gradient-to-r  from-[#4D55CC] to-white w-0">
                                     <span
@@ -460,9 +483,12 @@
                             </div>
                         </div>
 
-                        <div class="skill">
-                            <div class="text-2xl text-white font-normal mb-2">Wordpress</div>
-                            <div class="progress-bar-wrapper bg-[#B5A8D5] gsap-fade bg-opacity-10 w-full h-6 ">
+                        <div class="skill relative gsap-fade">
+                            <div
+                                class="absolute -top-5 -left-10 text-5xl textStroke text-transparent font-bold  opacity-60 mb-2">
+                                Wordpress
+                            </div>
+                            <div class="progress-bar-wrapper bg-[#B5A8D5]  bg-opacity-10 w-full h-10 ">
                                 <div data-percentage="60"
                                     class="progress-bar h-full  bg-gradient-to-r  from-[#4D55CC] to-white w-0">
                                     <span
@@ -471,9 +497,13 @@
                             </div>
                         </div>
 
-                        <div class="skill">
-                            <div class="text-2xl text-white font-normal mb-2">Big commerce</div>
-                            <div class="progress-bar-wrapper bg-[#B5A8D5] gsap-fade bg-opacity-10 w-full h-6 ">
+                        <div class="skill relative gsap-fade">
+                            <div
+                                class="absolute -top-5 -left-10 text-5xl textStroke text-transparent font-bold  opacity-60 mb-2">
+                                Big
+                                commerce
+                            </div>
+                            <div class="progress-bar-wrapper bg-[#B5A8D5]  bg-opacity-10 w-full h-10 ">
                                 <div data-percentage="45"
                                     class="progress-bar h-full  bg-gradient-to-r  from-[#4D55CC] to-white w-0">
                                     <span
@@ -490,6 +520,70 @@
     </section>
 
 
+    <!-- Portfolio -->
+
+    <section class="py-32 relative">
+        <div class="px-5 md:px-8 lg:px-12">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center pt-10 pb-7">
+                    <h2 class=" text-white text-[200px] leading-[0.8] font-bold glowing-text heading-text relative">
+                        Latest<br>
+                        Portfolio</h2>
+                    <h3 class="text-white text-5xl font-bold mt-12 mb-6 glowing-text subheading-text">Transforming Ideas
+                        into Exceptional</h3>
+                    <p class="text-white text-2xl font-medium max-w-screen-md mx-auto glowing-text paragraph-text">
+                        Business consulting consultants provide expert advice and guida businesses to help them improve
+                        their performance, efficiency, and organizational
+                    </p>
+                </div>
+
+                <div class="flex gap-52 items-center justify-center h-screen max-w-screen-lg mx-auto">
+
+                    <!-- Left: Card Stack -->
+                    <div id="cardStack" class="relative w-[500px] h-[600px]">
+                        <!-- Cards (add as many as needed) -->
+                        <div data-index="1"
+                            class="card absolute w-full h-full bg-white text-black rounded shadow-xl flex items-center justify-center flex-col">
+                            <div class="text-xs text-black">ONE</div>
+                            <div class="text-7xl font-bold">1</div>
+                        </div>
+                        <div data-index="2"
+                            class="card absolute w-full h-full bg-white text-black rounded shadow-xl flex items-center justify-center flex-col">
+                            <div class="text-xs text-black">TWO</div>
+                            <div class="text-7xl font-bold">2</div>
+                        </div>
+                        <div data-index="3"
+                            class="card absolute w-full h-full bg-white text-black rounded shadow-xl flex items-center justify-center flex-col">
+                            <div class="text-xs text-black">THREE</div>
+                            <div class="text-7xl font-bold">3</div>
+                        </div>
+                        <div data-index="4"
+                            class="card absolute w-full h-full bg-white text-black rounded shadow-xl flex items-center justify-center flex-col">
+                            <div class="text-xs text-black">FOUR</div>
+                            <div class="text-7xl font-bold">4</div>
+                        </div>
+                    </div>
+
+                    <!-- Right: List Items -->
+                    <div class="space-y-6">
+                        <div class="font-bold text-5xl text-white mb-10">PORTFOLIO LIST</div>
+                        <div class="listText text-white tracking-[2px] uppercase text-xl font-medium cursor-pointer list-item list-none hover:-translate-x-4 transition-all duration-200"
+                            data-target="1"><span>01</span> <span></span>
+                            Portfolio </div>
+                        <div class="listText text-white tracking-[2px] uppercase text-xl  font-medium cursor-pointer list-item list-none hover:-translate-x-4 transition-all duration-200"
+                            data-target="2"><span>02</span> <span></span>
+                            Portfolio </div>
+                        <div class="listText text-white tracking-[2px] uppercase text-xl font-medium cursor-pointer list-item list-none hover:-translate-x-4 transition-all duration-200"
+                            data-target="3"><span>03</span> <span></span>
+                            Portfolio </div>
+                        <div class="listText text-white tracking-[2px] uppercase text-xl font-medium cursor-pointer list-item list-none
+                        hover:-translate-x-4 transition-all duration-200" data-target="4"><span>04</span> <span></span>
+                            Portfolio </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -500,6 +594,7 @@
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
     <script src="custom.js"></script>
 </body>
 
