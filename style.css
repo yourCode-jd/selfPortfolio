@@ -3,7 +3,6 @@
 }
 
 body {
-    /* background-color: #ECFAE5; */
     background-image: radial-gradient(circle, #7a73d1, #736dd0, #6b67cf, #6362ce, #5a5ccd, #5355c7, #4b4dc0, #4346ba, #3b3bac, #33319f, #2a2691, #211c84);
     font-family: rajdhani;
     margin: 0;
@@ -98,7 +97,7 @@ small {
     -webkit-text-stroke: 1px #ffffff;
 }
 
-/*  */
+/* ======     ==== */
 
 #heroSection {
     position: relative;
@@ -217,7 +216,7 @@ small {
 }
 
 
-/* triangle */
+/* ======  triangle   ==== */
 #triangleSection {
     height: 220vh;
     position: relative;
@@ -266,7 +265,7 @@ small {
     pointer-events: auto;
 }
 
-/* card */
+/* ======  card   ==== */
 .card {
     transition: all 0.3s ease;
     will-change: transform, opacity;

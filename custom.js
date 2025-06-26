@@ -1,13 +1,12 @@
 // body overflow hidden
-// document.addEventListener("DOMContentLoaded", function () {
-//   const nav = document.getElementById("Hamburger");
+document.addEventListener("DOMContentLoaded", function () {
+  const nav = document.getElementById("Hamburger");
 
-//   nav.addEventListener("click", function () {
-//     document.body.classList.toggle("overflow-hidden");
-//   });
-// });
+  nav.addEventListener("click", function () {
+    document.body.classList.toggle("overflow-hidden");
+  });
+});
 
-//
 gsap.to(".scroll-indicator", {
   y: "100%", // move full height of parent
   duration: 10, // slower animation
