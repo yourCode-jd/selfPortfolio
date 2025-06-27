@@ -405,4 +405,4 @@ document.querySelectorAll(".list-item").forEach((item) => {
   });
 });
 
-// card title
+// wave

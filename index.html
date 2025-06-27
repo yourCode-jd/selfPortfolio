@@ -40,7 +40,8 @@
 
     <section class="p-0">
         <div class="px-5 md:px-8 lg:px-12">
-            <!-- <div id="heroBg" class="absolute top-0 left-0 w-full h-full z-0"></div> -->
+
+            <!-- Navigation -->
             <nav
                 class="absolute px-5 md:px-8 lg:px-12 flex items-center justify-between py-5 left-0 w-full bg-[#3A4D39] bg-opacity-5 backdrop-blur-5xl z-20">
                 <!-- Logo -->
@@ -63,12 +64,27 @@
                 </div>
             </nav>
 
-            <!-- Hero -->
-            <div class="flex items-center justify-center h-screen">
-                <a href="#">
-                    <h1 id="bannerTitle" class="text-[80px] md:text-[150px] lg:text-[200px] xl:text-[250px] font-bold">
-                        welcome
+            <!-- banner-circle -->
+            <div class="tmp-banner-circle">
+                <div class="tmp-banner-circle-1"></div>
+                <div class="tmp-banner-circle-2"></div>
+                <div class="tmp-banner-circle-3"></div>
+                <div class="tmp-banner-circle-4"></div>
+            </div>
+
+            <!-- Hero Content -->
+            <div class="flex items-center justify-center h-screen relative ">
+                <a href="#" class="relative">
+                    <h1 id="bannerTitle"
+                        class="text-[80px] md:text-[150px] lg:text-[200px] xl:text-[300px] font-bold uppercase">
+                        Designer
                     </h1>
+                    <div class="Sline rotate-0 absolute top-0 left-0 w-[2px] h-full bg-white bg-opacity-0 z-10">
+                        <div class="scroll-indicator w-full h-[50%] bg-gradient-to-t from-white to-transparent"></div>
+                    </div>
+                    <div class="Sline rotate-0 absolute top-0 right-0 w-[2px] h-full bg-white bg-opacity-0 z-10">
+                        <div class="scroll-indicator w-full h-[50%] bg-gradient-to-t from-white to-transparent"></div>
+                    </div>
                 </a>
             </div>
         </div>
@@ -377,6 +393,8 @@
     <!-- progress bar -->
 
     <section class="z-10 py-32 relative">
+        <div class="absolute top-0 left-0 w-full h-[100px] flex">
+        </div>
         <div class="px-5 md:px-8 lg:px-12">
             <div class="max-w-7xl mx-auto">
                 <div class="mb-16 items-center">
@@ -519,13 +537,12 @@
         </div>
     </section>
 
-
     <!-- Portfolio -->
 
     <section class="py-32 relative overflow-hidden">
-        <div
+        <!-- <div
             class="absolute top-0 left-0 w-full h-full bg-[url('images/liquid.jpeg')] bg-cover -z-10 blur-[70px] opacity-40 ">
-        </div>
+        </div> -->
         <div class="px-5 md:px-8 lg:px-12">
             <div class="max-w-7xl mx-auto z-10">
 
@@ -593,7 +610,49 @@
     </section>
 
 
-
+    <!-- Contact us -->
+    <section class="relative overflow-hidden h-screen">
+        <div
+            class="gsap-fade contact-bg absolute top-0 left-0 w-full h-full bg-[url('images/self2.jpg')] bg-cover -z-10 bg-[center_46%] ">
+        </div>
+        <div class="px-5 md:px-8 lg:px-12 ">
+            <div class="max-w-screen-2xl mx-auto pt-20">
+                <div class="flex flex-col items-start justify-center">
+                    <h2 class="gsap-fade text-[220px] font-bold text-black mb-4 leading-[0.8] ">Contact Me
+                    </h2>
+                </div>
+                <div class="grid grid-cols-2 items-start justify-center gap-18 py-12 max-w-7xl">
+                    <p
+                        class="gsap-fade text-xl text-black mb-8 max-w-lg pl-2 font-semibold tracking-wide leading-relaxed">
+                        Have a
+                        question, idea,
+                        or project in
+                        mind?
+                        We're
+                        here
+                        to help!
+                        Reach out to us and let's start building something amazing together. Whether it's a quick
+                        inquiry or a full collaboration, we're just a message away.</p>
+                    <div class="flex flex-col items-start justify-center gap-10">
+                        <div class="">
+                            <h4 class="gsap-fade text-2xl font-semibold text-black uppercase">Address</h4>
+                            <p class="gsap-fade text-xl text-black max-w-sm">USA street 102, road 22 house of street</p>
+                        </div>
+                        <div class="">
+                            <h4 class="gsap-fade text-2xl font-semibold text-black uppercase">E-mail</h4>
+                            <p class="gsap-fade text-xl text-black max-w-sm">designer@yourmail.com</p>
+                            <p class="gsap-fade text-xl text-black max-w-sm">thedesigner@gmail.com</p>
+                        </div>
+                        <div class="">
+                            <h4 class="gsap-fade text-2xl font-semibold text-black uppercase">Call Me</h4>
+                            <p class="gsap-fade text-xl text-black max-w-sm">0000 - 000 - 000 00</p>
+                            <p class="gsap-fade text-xl text-black max-w-sm">+1234 - 000 - 000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -602,6 +661,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
+    <script src="https://unpkg.com/gsap@3/dist/MotionPathPlugin.min.js"></script>
     <script src="custom.js"></script>
 </body>
 
