@@ -96,6 +96,7 @@ small {
 .textStroke {
     -webkit-text-stroke: 1px #ffffff;
 }
+
 /* .blue-bg::before {
     content: '';
     position: absolute;

@@ -88,7 +88,7 @@ gsap.to(".scaling-circle", {
   ease: "power2.out",
   scrollTrigger: {
     trigger: "#heroSection",
-    start: "top 800px",
+    start: "top bottom",
     end: "+=800",
     scrub: 3,
   },
@@ -211,9 +211,7 @@ function openPopup(id) {
   const popup = document.getElementById("popup" + id);
 
   // Prevent re-clicking the same anchor
-  if (popup.classList.contains("active")) {
-    return; // already open, do nothing
-  }
+  if (popup.classList.contains("active")) return;
 
   // Close any other open popups
   document.querySelectorAll(".popup").forEach((p) => {
@@ -233,6 +231,9 @@ function openPopup(id) {
   // Show the target popup
   popup.style.display = "block";
   popup.classList.add("active");
+
+  // Disable background scroll
+  document.body.classList.add("overflow-hidden");
 
   gsap.fromTo(
     popup,
@@ -255,6 +256,9 @@ function closePopup() {
       onComplete: () => {
         activePopup.style.display = "none";
         activePopup.classList.remove("active");
+
+        // Re-enable scroll
+        document.body.classList.remove("overflow-hidden");
       },
     });
   }
