@@ -5,14 +5,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favIcon.png">
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Google Fonts: Rajdhani -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Portfolio</title>
 </head>
 
 <body class="font-rajdhani">
@@ -54,13 +59,16 @@
                     <span class="w-full h-1 rounded bg-white"></span>
                 </div>
                 <!-- Menu -->
-                <div id="slideNavigation" class="flex items-center gap-6">
-                    <a class="text-[#211C84] text-7xl font-normal uppercase transition-all hover:after:[''] hover:after:block relative hover:after:absolute hover:after:top-0 hover:after:left-0 p-1 hover:after:bg-[#211C84] hover:text-white hover:after:-z-10 hover:after:w-full hover:after:h-full"
-                        href="#">Home</a>
-                    <a class="text-[#211C84] text-7xl font-normal uppercase transition-all hover:after:[''] hover:after:block relative hover:after:absolute hover:after:top-0 hover:after:left-0 p-1 hover:after:bg-[#211C84] hover:text-white hover:after:-z-10 hover:after:w-full hover:after:h-full"
-                        href="#">About</a>
-                    <a class="text-[#211C84] text-7xl font-normal uppercase transition-all hover:after:[''] hover:after:block relative hover:after:absolute hover:after:top-0 hover:after:left-0 p-1 hover:after:bg-[#211C84] hover:text-white hover:after:-z-10 hover:after:w-full hover:after:h-full"
-                        href="#">Contact</a>
+                <div id="slideNavigation" class="flex items-center gap-6 relative">
+                    <video autoplay muted loop playsinline class="absolute w-full h-full object-cover z-[-1]">
+                        <source src="/images/menuVideo3.mp4" type="video/mp4" />
+                    </video>
+                    <a href="/index.html"
+                        class="text-white text-8xl font-bold uppercase transition-all hover:after:[''] hover:after:block relative hover:after:absolute hover:after:top-0 hover:after:left-0 p-1 hover:after:bg-[#211C84] hover:text-[#211C84] hover:after:-z-10 hover:after:w-full hover:after:h-full">Home</a>
+                    <a href="./about.html"
+                        class="text-white text-8xl font-bold uppercase transition-all hover:after:[''] hover:after:block relative hover:after:absolute hover:after:top-0 hover:after:left-0 p-1 hover:after:bg-[#211C84] hover:text-[#211C84] hover:after:-z-10 hover:after:w-full hover:after:h-full">About</a>
+                    <a href="./contact.html"
+                        class="text-white text-8xl font-bold uppercase transition-all hover:after:[''] hover:after:block relative hover:after:absolute hover:after:top-0 hover:after:left-0 p-1 hover:after:bg-[#211C84] hover:text-[#211C84] hover:after:-z-10 hover:after:w-full hover:after:h-full">Contact</a>
                 </div>
             </nav>
 
@@ -142,7 +150,7 @@
                 </p>
             </div>
             <div
-                class="content content-bg w-full max-w-7xl mx-auto flex flex-row gap-5 items-center border-[#211c84] rounded-lg p-10 backdrop-blur-xl group">
+                class="relative content content-bg w-full max-w-7xl mx-auto flex flex-row gap-5 items-center border-[#211c84] rounded-lg p-10 backdrop-blur-xl group">
                 <div class="w-1/2 flex items-center gap-3">
                     <div
                         class="border border-white rounded-full p-4 w-16 h-16 transition-all duration-[1500ms] relative left-0 group-hover:left-[90%]">
@@ -160,7 +168,7 @@
                 </p>
             </div>
             <div
-                class="content content-bg w-full max-w-7xl mx-auto flex flex-row gap-5 items-center border-[#211c84] rounded-lg p-10 backdrop-blur-xl group">
+                class="relative content content-bg w-full max-w-7xl mx-auto flex flex-row gap-5 items-center border-[#211c84] rounded-lg p-10 backdrop-blur-xl group">
                 <div class="w-1/2 flex items-center gap-3">
                     <div
                         class="border border-white rounded-full p-4 w-16 h-16 transition-all duration-[1500ms] relative left-0 group-hover:left-[90%]">
@@ -176,7 +184,7 @@
                 </p>
             </div>
             <div
-                class="content content-bg w-full max-w-7xl mx-auto flex flex-row gap-5 items-center border-[#211c84] rounded-lg p-10 backdrop-blur-xl group">
+                class="relative content content-bg w-full max-w-7xl mx-auto flex flex-row gap-5 items-center border-[#211c84] rounded-lg p-10 backdrop-blur-xl group">
                 <div class="w-1/2 flex items-center gap-3">
                     <div
                         class="border border-white rounded-full p-4 w-16 h-16 transition-all duration-[1500ms] relative left-0 group-hover:left-[90%]">
@@ -707,6 +715,7 @@
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script> -->
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://unpkg.com/gsap@3/dist/MotionPathPlugin.min.js"></script>
     <script src="custom.js"></script>

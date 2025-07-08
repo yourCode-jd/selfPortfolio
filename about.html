@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Rajdhani -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+</head>
+
+<body class="font-rajdhani">
+
+    <!-- Header -->
+    <section class="p-0">
+        <div class="px-5 md:px-8 lg:px-12">
+
+            <!-- Navigation -->
+            <nav
+                class="absolute px-5 md:px-8 lg:px-12 flex items-center justify-between py-5 left-0 w-full bg-[#3A4D39] bg-opacity-5 backdrop-blur-5xl z-20">
+                <!-- Logo -->
+                <h1 class="text-4xl font-bold uppercase cursor-pointer">Logo</h1>
+                <!-- Hamburger -->
+                <div id="Hamburger" class="w-10 h-auto flex flex-col gap-2 cursor-pointer z-10"
+                    onclick="toggleHighlight(), toggleCross()">
+                    <span class="w-full h-1 rounded bg-white"></span>
+                    <span class="w-full h-1 rounded bg-white"></span>
+                    <span class="w-full h-1 rounded bg-white"></span>
+                </div>
+                <!-- Menu -->
+                <div id="slideNavigation" class="flex items-center gap-6 relative">
+                    <video autoplay muted loop playsinline class="absolute w-full h-full object-cover z-[-1]">
+                        <source src="/images/menuVideo3.mp4" type="video/mp4" />
+                    </video>
+                    <a href="/index.html"
+                        class="text-white text-8xl font-bold uppercase transition-all hover:after:[''] hover:after:block relative hover:after:absolute hover:after:top-0 hover:after:left-0 p-1 hover:after:bg-[#211C84] hover:text-[#211C84] hover:after:-z-10 hover:after:w-full hover:after:h-full">Home</a>
+                    <a href="./about.html"
+                        class="text-white text-8xl font-bold uppercase transition-all hover:after:[''] hover:after:block relative hover:after:absolute hover:after:top-0 hover:after:left-0 p-1 hover:after:bg-[#211C84] hover:text-[#211C84] hover:after:-z-10 hover:after:w-full hover:after:h-full">About</a>
+                    <a href="./contact.html"
+                        class="text-white text-8xl font-bold uppercase transition-all hover:after:[''] hover:after:block relative hover:after:absolute hover:after:top-0 hover:after:left-0 p-1 hover:after:bg-[#211C84] hover:text-[#211C84] hover:after:-z-10 hover:after:w-full hover:after:h-full">Contact</a>
+                </div>
+            </nav>
+
+            <!-- banner-circle -->
+            <div class="tmp-banner-circle">
+                <div class="tmp-banner-circle-1"></div>
+                <div class="tmp-banner-circle-2"></div>
+                <div class="tmp-banner-circle-3"></div>
+                <div class="tmp-banner-circle-4"></div>
+            </div>
+
+            <!-- Hero Content -->
+            <div class="flex items-center justify-center h-screen relative ">
+                <a href="#" class="relative">
+                    <h1 id="bannerTitle"
+                        class="text-[80px] md:text-[150px] lg:text-[200px] xl:text-[300px] font-bold uppercase">
+                        About Us</h1>
+                    <div class="Sline rotate-0 absolute top-0 left-0 w-[2px] h-full bg-white bg-opacity-0 z-10">
+                        <div
+                            class="scroll-indicator w-full h-[50%] bg-gradient-to-t from-white to-transparent opacity-70">
+                        </div>
+                    </div>
+                    <div class="Sline rotate-0 absolute top-0 right-0 w-[2px] h-full bg-white bg-opacity-0 z-10">
+                        <div
+                            class="scroll-indicator w-full h-[50%] bg-gradient-to-t from-white to-transparent opacity-70">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="max-w-screen-xl mx-auto flex items-center justify-center h-screen">
+        <div class="px-5 md:px-8 lg:px-12">
+            <h3 class="text-container text-5xl text-white font-bold text-center space-y-5">
+                <div class="line">I'm unknown, a professional </div>
+                <div class="line"><span>web designer</span> specializing in responsive design,</div>
+                <div class="line">UI/UX, and creative <span>front-end solutions.</span></div>
+                <div class="line"> I <span>build fast,</span> accessible, and visually impactful</div>
+                <div class="line">websites using tools <span>like Figma,</span> Tailwind CSS, and </div>
+                <div class="line">Webflow. Whether you're a startup or a solo <span>creator,</span></div>
+                <div class="line"> I can help bring your <span>digital</span> vision to life.</div>
+            </h3>
+        </div>
+    </section>
+
+    <!-- Contact us -->
+    <section class="relative overflow-hidden h-screen">
+        <!-- <div
+            class="gsap-fade contact-bg absolute top-0 left-0 w-full h-full bg-[url('images/self2.jpg')] bg-cover -z-10 bg-[center_46%] ">
+        </div> -->
+        <div class="px-5 md:px-8 lg:px-12 ">
+            <div class="max-w-screen-xl mx-auto pt-20">
+                <div class="flex flex-col items-start justify-center">
+                    <h2 class="gsap-fade text-[220px] font-bold text-white mb-4 leading-[0.8] ">Contact Me
+                    </h2>
+                </div>
+                <div class="grid grid-cols-2 items-start justify-center gap-18 py-12 max-w-7xl">
+                    <p
+                        class="gsap-fade text-xl text-white mb-8 max-w-lg pl-2 font-medium tracking-wide leading-relaxed">
+                        Have a
+                        question, idea,
+                        or project in
+                        mind?
+                        We're
+                        here
+                        to help!
+                        Reach out to us and let's start building something amazing together. Whether it's a quick
+                        inquiry or a full collaboration, we're just a message away.</p>
+                    <div class="flex flex-col items-start justify-center gap-10">
+                        <div class="">
+                            <h4 class="gsap-fade text-2xl font-semibold text-white uppercase">Address</h4>
+                            <p class="gsap-fade text-xl text-white max-w-sm">USA street 102, road 22 house of street</p>
+                        </div>
+                        <div class="">
+                            <h4 class="gsap-fade text-2xl font-semibold text-white uppercase">E-mail</h4>
+                            <p class="gsap-fade text-xl text-white max-w-sm">designer@yourmail.com</p>
+                            <p class="gsap-fade text-xl text-white max-w-sm">thedesigner@gmail.com</p>
+                        </div>
+                        <div class="">
+                            <h4 class="gsap-fade text-2xl font-semibold text-white uppercase">Call Me</h4>
+                            <p class="gsap-fade text-xl text-white max-w-sm">0000 - 000 - 000 00</p>
+                            <p class="gsap-fade text-xl text-white max-w-sm">+1234 - 000 - 000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://unpkg.com/gsap@3/dist/MotionPathPlugin.min.js"></script>
+    <script src="custom.js"></script>
+</body>
+
+</html>

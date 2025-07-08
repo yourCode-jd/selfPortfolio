@@ -136,6 +136,24 @@ document.querySelectorAll(".step").forEach((step, index) => {
   );
 });
 
+// Draggable
+
+// Make each .content-bg draggable
+// document.querySelectorAll(".content-bg").forEach((el) => {
+//   Draggable.create(el, {
+//     type: "x,y",
+//     edgeResistance: 0.65,
+//     bounds: "#heroSection",
+//     inertia: true,
+//     onPress() {
+//       gsap.to(el, { scale: 1.02, duration: 0.2, ease: "power1.out" }); // optional scale on pick up
+//     },
+//     onRelease() {
+//       gsap.to(el, { scale: 1, duration: 0.3, ease: "power1.out" }); // reset scale
+//     },
+//   });
+// });
+
 // triangle
 gsap.registerPlugin(ScrollTrigger);
 
