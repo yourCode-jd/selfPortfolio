@@ -407,19 +407,33 @@ small {
 }
 
 #triangle2,
-#triangle3 {
+#triangle3,
+#triangle4,
+#triangle5 {
     opacity: 0;
 }
 
 #triangle2 {
     top: 25.5%;
-    left: 31.5%;
+    left: 27.5%;
     scale: 0.2;
 }
 
 #triangle3 {
     top: 25.5%;
-    right: 31.5%;
+    right: 26.5%;
+    scale: 0.2;
+}
+
+#triangle4 {
+    top: 6%;
+    left: 14%;
+    scale: 0.2;
+}
+
+#triangle5 {
+    top: 6%;
+    right: 14%;
     scale: 0.2;
 }
 

@@ -189,98 +189,131 @@ tl.to("#triangle1", {
   ease: "power2.out",
 });
 
-tl.to(["#triangle2", "#triangle3"], {
+tl.to("#triangle2", {
   opacity: 1,
-  duration: 1.5,
-  stagger: 0.3,
-  // rotate: 360,
   scale: 1,
+  duration: 1.2,
   ease: "power2.out",
 });
 
-tl.to("#triangle1 + a", {
+tl.to("#triangle3", {
   opacity: 1,
-  duration: 2,
+  scale: 1,
+  duration: 1.2,
+  ease: "power2.out",
+});
+
+tl.to("#triangle4", {
+  opacity: 1,
+  scale: 1,
+  duration: 1.2,
+  ease: "power2.out",
+});
+
+tl.to("#triangle5", {
+  opacity: 1,
+  scale: 1,
+  duration: 1.2,
+  ease: "power2.out",
+});
+
+tl.to(".triangleText1", {
+  opacity: 1,
+  duration: 1.5,
   ease: "power1.inOut",
 });
 
-// Show Triangle 2 anchor
 tl.to(
-  "#triangle2 + a",
+  ".triangleText2",
   {
     opacity: 1,
-    duration: 2,
+    duration: 1.5,
     ease: "power1.inOut",
   },
   "-=1"
-); // overlaps slightly with triangle2 animation end
+);
 
-// Show Triangle 3 anchor
-tl.to("#triangle3 + a", {
+tl.to(
+  ".triangleText3",
+  {
+    opacity: 1,
+    duration: 1.5,
+    ease: "power1.inOut",
+  },
+  "-=1"
+);
+
+tl.to(".triangleText4", {
   opacity: 1,
-  duration: 2,
+  duration: 1.5,
+  ease: "power1.inOut",
+});
+
+tl.to(".triangleText5", {
+  opacity: 1,
+  duration: 1.5,
   ease: "power1.inOut",
 });
 
 // Show Triangle popup
-function openPopup(id) {
-  event.preventDefault();
+// function openPopup(id) {
+//   event.preventDefault();
 
-  const popup = document.getElementById("popup" + id);
+//   const popup = document.getElementById("popup" + id);
 
-  // Prevent re-clicking the same anchor
-  if (popup.classList.contains("active")) return;
+//   // Prevent re-clicking the same anchor
+//   if (popup.classList.contains("active")) return;
 
-  // Close any other open popups
-  document.querySelectorAll(".popup").forEach((p) => {
-    if (p.classList.contains("active")) {
-      gsap.to(p, {
-        x: "100%",
-        duration: 0.5,
-        ease: "power2.inOut",
-        onComplete: () => {
-          p.style.display = "none";
-          p.classList.remove("active");
-        },
-      });
-    }
-  });
+//   // Close any other open popups
+//   document.querySelectorAll(".popup").forEach((p) => {
+//     if (p.classList.contains("active")) {
+//       gsap.to(p, {
+//         x: "100%",
+//         duration: 0.5,
+//         ease: "power2.inOut",
+//         onComplete: () => {
+//           p.style.display = "none";
+//           p.classList.remove("active");
+//         },
+//       });
+//     }
+//   });
 
-  // Show the target popup
-  popup.style.display = "block";
-  popup.classList.add("active");
+//   // Show the target popup
+//   popup.style.display = "block";
+//   popup.classList.add("active");
 
-  // Disable background scroll
-  document.body.classList.add("overflow-hidden");
+//   // Disable background scroll
+//   document.body.classList.add("overflow-hidden");
 
-  gsap.fromTo(
-    popup,
-    { x: "100%" },
-    {
-      x: "0%",
-      duration: 0.7,
-      ease: "power3.out",
-    }
-  );
-}
+//   gsap.fromTo(
+//     popup,
+//     { x: "100%" },
+//     {
+//       x: "0%",
+//       duration: 0.7,
+//       ease: "power3.out",
+//     }
+//   );
+// }
 
-function closePopup() {
-  const activePopup = document.querySelector(".popup.active");
-  if (activePopup) {
-    gsap.to(activePopup, {
-      x: "100%",
-      duration: 0.5,
-      ease: "power2.inOut",
-      onComplete: () => {
-        activePopup.style.display = "none";
-        activePopup.classList.remove("active");
+// function closePopup() {
+//   const activePopup = document.querySelector(".popup.active");
+//   if (activePopup) {
+//     gsap.to(activePopup, {
+//       x: "100%",
+//       duration: 0.5,
+//       ease: "power2.inOut",
+//       onComplete: () => {
+//         activePopup.style.display = "none";
+//         activePopup.classList.remove("active");
 
-        // Re-enable scroll
-        document.body.classList.remove("overflow-hidden");
-      },
-    });
-  }
-}
+//         // Re-enable scroll
+//         document.body.classList.remove("overflow-hidden");
+//       },
+//     });
+//   }
+// }
 
 // designer text
 

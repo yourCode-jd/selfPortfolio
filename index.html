@@ -208,7 +208,7 @@
 
     <section id="triangleSection" class="flex items-center justify-center relative overflow-hidden">
         <!-- shapes -->
-        <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+        <!-- <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
             <defs>
                 <rect id="some-square" x="326" y="344" rx="20" fill="hsl(256, 80%, 65%)" stroke="hsl(256, 80%, 45%)"
                     stroke-width="11" width="100" height="100"></rect>
@@ -218,7 +218,7 @@
             <use class="gsap-fade opacity-20" x="300" y="-200" href="#some-square" />
             <use class="gsap-fade opacity-20" x="-200" y="-200" href="#some-square" />
             <use class="gsap-fade opacity-20" x="400" y="-100" href="#some-square" />
-        </svg>
+        </svg> -->
         <div
             class="absolute top-0 left-0 w-full h-full  bg-[url('images/blob-bg.svg')] bg-cover z-0 animate-pulse opacity-60 blur-3xl">
         </div>
@@ -231,90 +231,88 @@
 
         <!-- Triangle 1 -->
         <div class="triangle-container">
-            <!-- Popup hidden by default -->
-            <div id="popup1" class="popup absolute top-0 right-0 w-[500px] h-full bg-white p-7" style="display: none">
-                <div class="pt-24">
-                    <img src="images/pentool.svg" alt="pen tool" class="mb-6" />
-                </div>
-                <h1 class="text-8xl font-medium text-[#211c84] tracking-tighter">
-                    Fast <br />
+            <a href="javascript:void(0)" class="">
+                <svg class="cursor-pointer triangle w-[350px]" id="triangle1" viewBox="0 0 100 100">
+                    <polygon points="50,0 100,100 0,100" fill="#ffffff" />
+                </svg>
+                <span
+                    class="triangleText1 flex-col w-60 pointer-events-none opacity-0 absolute left-[43.5%] top-[17%] z-10 flex items-center gap-2 text-xl font-bold text-[#211c84]">
+                    <img src="images/send.svg" class="animate-bounce" />
+                    Fast
                     Performance
-                </h1>
-                <p class="mt-4 text-2xl font-medium text-[#211c84]">
-                    Optimized for a smaller build size, faster dev compilation and
-                    dozens of other improvements.
-                </p>
-                <button onclick="closePopup()" class="absolute top-10 right-5">
-                    <img src="images/cross.svg" class="w-14 animate-bounce" alt="" />
-                </button>
-            </div>
-            <svg onclick="openPopup(1)" class="cursor-pointer triangle w-[350px]" id="triangle1" viewBox="0 0 100 100">
-                <polygon points="50,0 100,100 0,100" fill="#ffffff" />
-            </svg>
-
-            <a href=""
-                class="flex-col-reverse pointer-events-none opacity-0 absolute left-[46.5%] top-[17%] z-10 flex items-center gap-2 text-xl font-medium text-[#211c84]">
-                Fast
-                Performance <img src="images/send.svg" class="animate-bounce" />
+                    <p class="text-base max-w-1/2 mx-auto text-center font-medium">Optimized assets and code for blazing
+                        speed.
+                    </p>
+                </span>
             </a>
         </div>
 
         <!-- Triangle 2 -->
         <div class="triangle-container">
-            <div id="popup2" class="popup absolute top-0 right-0 w-[500px] h-full bg-white p-7" style="display: none">
-                <div class="pt-24">
-                    <img src="images/bulb.svg" alt="bulb" class="mb-6" />
-                </div>
-                <h1 class="text-8xl font-medium text-[#211c84] tracking-tighter">
-                    Perfect Responsive
-                </h1>
-                <p class="mt-4 text-2xl font-medium text-[#211c84]">
-                    Our Template is full Perfect for all device. You can visit our
-                    template all device easily.
-                </p>
-                <button onclick="closePopup()" class="absolute top-10 right-5">
-                    <img src="images/cross.svg" class="w-14 animate-bounce" alt="" />
-                </button>
-            </div>
-            <svg onclick="openPopup(2)" class="cursor-pointer triangle w-[350px]" id="triangle2" viewBox="0 0 100 100">
-                <polygon points="50,0 100,100 0,100" fill="#ffffff" />
-            </svg>
-            Click me
-
-
-            <a href=""
-                class="flex-col-reverse pointer-events-none opacity-0 absolute left-[36%] top-[37%] z-10 flex items-center gap-2 text-xl font-medium text-[#211c84]">
-                Perfect
-                Responsive
-                <img src="images/send.svg" class="animate-bounce" />
+            <a href="javascript:void(0)" class="">
+                <svg class="cursor-pointer triangle w-[350px]" id="triangle2" viewBox="0 0 100 100">
+                    <polygon points="50,0 100,100 0,100" fill="#ffffff" />
+                </svg>
+                <span
+                    class="triangleText2 flex-col w-60 pointer-events-none opacity-0 absolute left-[30.5%] top-[36.5%] z-10 flex items-center gap-2 text-xl font-bold text-[#211c84]">
+                    <img src="images/send.svg" class="animate-bounce" />
+                    Responsive Design
+                    <p class="text-base max-w-1/2 mx-auto text-center font-medium">Ensuring seamless experiences across
+                        all screen
+                        sizes.</p>
+                </span>
             </a>
         </div>
 
 
         <!-- Triangle 3 -->
         <div class="triangle-container">
-            <div id="popup3" class="popup absolute top-0 right-0 w-[500px] h-full bg-white p-7" style="display: none">
-                <div class="pt-24">
-                    <img src="images/signBoard.svg" alt="signBoard" class="mb-6" />
-                </div>
-                <h1 class="text-8xl font-medium text-[#211c84] tracking-tighter">
+            <a href="javascript:void(0)" class="">
+                <svg class="cursor-pointer triangle w-[350px]" id="triangle3" viewBox="0 0 100 100">
+                    <polygon points="50,0 100,100 0,100" fill="#ffffff" />
+                </svg>
+                <span
+                    class="triangleText3 flex-col w-60 pointer-events-none opacity-0 absolute right-[29.5%] top-[36.5%] z-10 flex items-center gap-2 text-xl font-bold text-[#211c84]">
+                    <img src="images/send.svg" class="animate-bounce" />
                     Friendly Support
-                </h1>
-                <p class="mt-4 text-2xl font-medium text-[#211c84]">
-                    We are provide 24 hours support for all clients.You can purchase
-                    without hesitation.
-                </p>
-                <button onclick="closePopup()" class="absolute top-10 right-5">
-                    <img src="images/cross.svg" class="w-14 animate-bounce" alt="" />
-                </button>
-            </div>
-            <svg onclick="openPopup(3)" class="cursor-pointer triangle w-[350px]" id="triangle3" viewBox="0 0 100 100">
-                <polygon points="50,0 100,100 0,100" fill="#ffffff" />
-            </svg>
-            <a href=""
-                class="flex-col-reverse pointer-events-none opacity-0 absolute left-[56%] top-[37%] z-10 flex items-center gap-2 text-xl font-medium text-[#211c84]">
-                Friendly Support
-                <img src="images/send.svg" class="animate-bounce" />
+                    <p class="text-base max-w-1/2 mx-auto text-center font-medium">Quick, reliable help even after the
+                        project ends.
+                    </p>
+                </span>
+            </a>
+        </div>
+
+        <!-- Triangle 4 -->
+        <div class="triangle-container">
+            <a href="javascript:void(0)" class="">
+                <svg class="cursor-pointer triangle w-[350px]" id="triangle4" viewBox="0 0 100 100">
+                    <polygon points="50,0 100,100 0,100" fill="#ffffff" />
+                </svg>
+                <span
+                    class="triangleText4 flex-col w-60 pointer-events-none opacity-0 absolute left-[16.7%] top-[17%] z-10 flex items-center gap-2 text-xl font-bold text-[#211c84]">
+                    <img src="images/send.svg" class="animate-bounce" />
+                    Interaction Design
+                    <p class="text-base max-w-1/2 mx-auto text-center font-medium">Smooth animations and
+                        microinteractions that
+                        delight.</p>
+                </span>
+            </a>
+        </div>
+
+        <!-- Triangle 5 -->
+        <div class="triangle-container">
+            <a href="javascript:void(0)" class="">
+                <svg class="cursor-pointer triangle w-[350px]" id="triangle5" viewBox="0 0 100 100">
+                    <polygon points="50,0 100,100 0,100" fill="#ffffff" />
+                </svg>
+                <span
+                    class="triangleText5 flex-col w-60 pointer-events-none opacity-0 absolute right-[16.7%] top-[17%] z-10 flex items-center gap-2 text-xl font-bold text-[#211c84]">
+                    <img src="images/send.svg" class="animate-bounce" />
+                    Problem Solver
+                    <p class="text-base max-w-1/2 mx-auto text-center font-medium">Design isn’t just about looks — it
+                        solves real
+                        challenges.</p>
+                </span>
             </a>
         </div>
 
