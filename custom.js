@@ -90,7 +90,7 @@ gsap.to(".scaling-circle", {
     trigger: "#heroSection",
     start: "top bottom",
     end: "+=800",
-    scrub: 3,
+    scrub: 1,
   },
 });
 
