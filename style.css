@@ -37,6 +37,10 @@ body.contact {
     background-image: linear-gradient(to left, #536dfe, #304ffe, #1a237e);
 }
 
+body.portfolio {
+    background: linear-gradient(300deg, rgba(252, 70, 107, 1) 0%, rgba(63, 94, 251, 1) 35%, rgba(252, 70, 107, 1) 100%);
+}
+
 body::-webkit-scrollbar {
     width: 0;
     background: transparent;

@@ -461,3 +461,67 @@ document.querySelectorAll(".list-item").forEach((item) => {
 });
 
 // wave
+
+// portfolio cards
+
+gsap.registerPlugin(ScrollTrigger);
+
+const items = document.querySelectorAll(".section-item");
+
+items.forEach((item, index) => {
+  const imageWrapper = item.querySelector(".image-wrapper");
+  const textContent = item.querySelector(".text-content");
+  const heading = textContent.querySelector("h2");
+  const paragraph = textContent.querySelector("p");
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: item,
+      start: "top 60%",
+      end: "bottom 20%",
+      scrub: 2,
+      toggleActions: "play reverse play reverse", // Allow reverse
+      markers: false, // Turn to true for debugging
+    },
+  });
+
+  // Unique effects per item
+  switch (index % 3) {
+    case 0:
+      tl.from(imageWrapper, {
+        x: -200,
+        opacity: 0,
+        duration: 1,
+        ease: "power4.out",
+      }).from(
+        textContent,
+        { x: 200, opacity: 0, duration: 1, ease: "power4.out" },
+        "-=0.8"
+      );
+      break;
+    case 1:
+      tl.from(imageWrapper, {
+        rotateY: 90,
+        opacity: 0,
+        duration: 1,
+        ease: "back.out(1.7)",
+      }).from(
+        textContent,
+        { y: 100, opacity: 0, duration: 1, ease: "power3.out" },
+        "-=0.8"
+      );
+      break;
+    case 2:
+      tl.from(imageWrapper, {
+        scale: 0.5,
+        opacity: 0,
+        duration: 1,
+        ease: "elastic.out(1, 0.5)",
+      }).from(
+        textContent,
+        { rotate: 15, opacity: 0, duration: 1, ease: "expo.out" },
+        "-=0.8"
+      );
+      break;
+  }
+});
