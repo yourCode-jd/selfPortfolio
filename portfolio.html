@@ -29,6 +29,14 @@
         <div class="scroll-indicator w-full h-[50%] bg-gradient-to-t from-white to-transparent opacity-70">
         </div>
     </div>
+
+    <!-- Cursor -->
+
+    <div id="customCursor"
+        class="fixed top-0 left-0 w-8 h-8 rounded-full bg-[#7A73D1] pointer-events-none z-50 transition-all duration-200 ease-out mix-blend-multiply text-white text-[10px] flex items-center justify-center">
+        <span id="cursorText"></span>
+    </div>
+
     <!-- Header -->
     <section class="p-0">
         <div class="px-5 md:px-8 lg:px-12">
@@ -90,12 +98,12 @@
     <!-- Portfolio -->
     <section class="">
         <div class="max-w-screen-2xl mx-auto px-5 md:px-8 lg:px-12">
-            <ul class="grid grid-cols-1 gap-40 section-list">
+            <ul class="grid grid-cols-1 gap-40 section-list ">
                 <li class="section-item">
                     <div class="grid grid-cols-2 items-center justify-center gap-10">
-                        <div class="bg-white p-10 rounded-xl image-wrapper h-[600px] ">
+                        <div class="bg-white bg-opacity-20 backdrop-blur-xs p-10 rounded-xl image-wrapper h-[375px]">
                             <img src="assets/images/Serum-Product.png" alt="Portfolio"
-                                class="w-full h-full object-cover main-img " />
+                                class="w-full h-full object-contain main-img " />
                         </div>
                         <div class="flex flex-col gap-5 justify-center items-center text-content">
                             <div class="bg-white rounded-full w-20 h-20 overflow-hidden border-2 border-white mb-6">
@@ -103,7 +111,7 @@
                                     class="w-full h-full object-cover" />
                             </div>
                             <h2
-                                class="text-8xl font-semibold text-white max-w-xl text-center capitalize leading-[0.9] mb-8">
+                                class="text-6xl font-semibold text-white max-w-sm text-center capitalize leading-[0.9] mb-6">
                                 Serum product
                             </h2>
                             <p class="text-xl font-medium text-white capitalize tracking-[5px]">personal project</p>
@@ -113,17 +121,37 @@
 
                 <li class="section-item">
                     <div class="grid grid-cols-2 items-center justify-center gap-10">
-                        <div class="bg-white p-10 rounded-xl image-wrapper h-[600px] ">
-                            <img src="assets/images/music.png" alt="Portfolio"
-                                class="w-full h-full object-cover main-img " />
-                        </div>
                         <div class="flex flex-col gap-5 justify-center items-center text-content">
                             <div class="bg-white rounded-full w-20 h-20 overflow-hidden border-2 border-white mb-6">
                                 <img src="assets/images/music.png" alt="Avatar" class="w-full h-full object-cover" />
                             </div>
                             <h2
-                                class="text-8xl font-semibold text-white max-w-xl text-center capitalize leading-[0.9] mb-8">
-                                Serum product
+                                class="text-6xl font-semibold text-white max-w-sm text-center capitalize leading-[0.9] mb-6">
+                                Sound and Music
+                            </h2>
+                            <p class="text-xl font-medium text-white capitalize tracking-[5px]">personal project</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 backdrop-blur-xs p-10 rounded-xl image-wrapper h-[375px] ">
+                            <img src="assets/images/music.png" alt="Portfolio"
+                                class="w-full h-full object-contain main-img " />
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="section-item">
+                    <div class="grid grid-cols-2 items-center justify-center gap-10">
+                        <div class="bg-white bg-opacity-20 backdrop-blur-xs p-10 rounded-xl image-wrapper h-[375px] ">
+                            <img src="assets/images/fashion.png" alt="Portfolio"
+                                class="w-full h-full object-contain main-img " />
+                        </div>
+                        <div class="flex flex-col gap-5 justify-center items-center text-content">
+                            <div class="bg-white rounded-full w-20 h-20 overflow-hidden border-2 border-white mb-6">
+                                <img src="assets/images/fashion.png" alt="Avatar" class="w-full h-full object-cover" />
+                            </div>
+                            <h2
+                                class="text-6xl font-semibold text-white max-w-sm text-center capitalize leading-[0.9] mb-6">
+                                fashion Store
                             </h2>
                             <p class="text-xl font-medium text-white capitalize tracking-[5px]">personal project</p>
                         </div>
@@ -132,18 +160,36 @@
 
                 <li class="section-item">
                     <div class="grid grid-cols-2 items-center justify-center gap-10">
-                        <div class="bg-white p-10 rounded-xl image-wrapper h-[600px] ">
-                            <img src="assets/images/Serum-Product.png" alt="Portfolio"
-                                class="w-full h-full object-cover main-img " />
+                        <div class="flex flex-col gap-5 justify-center items-center text-content">
+                            <div class="bg-white rounded-full w-20 h-20 overflow-hidden border-2 border-white mb-6">
+                                <img src="assets/images/fitness.png" alt="Avatar" class="w-full h-full object-cover" />
+                            </div>
+                            <h2
+                                class="text-6xl font-semibold text-white max-w-sm text-center capitalize leading-[0.9] mb-6">
+                                Fitness industry
+                            </h2>
+                            <p class="text-xl font-medium text-white capitalize tracking-[5px]">personal project</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 backdrop-blur-xs p-10 rounded-xl image-wrapper h-[375px] ">
+                            <img src="assets/images/fitness.png" alt="Portfolio"
+                                class="w-full h-full object-contain main-img " />
+                        </div>
+                    </div>
+                </li>
+
+                <li class="section-item">
+                    <div class="grid grid-cols-2 items-center justify-center gap-10">
+                        <div class="bg-white bg-opacity-20 backdrop-blur-xs p-10 rounded-xl image-wrapper h-[375px] ">
+                            <img src="assets/images/studio.png" alt="Portfolio"
+                                class="w-full h-full object-contain main-img " />
                         </div>
                         <div class="flex flex-col gap-5 justify-center items-center text-content">
                             <div class="bg-white rounded-full w-20 h-20 overflow-hidden border-2 border-white mb-6">
-                                <img src="assets/images/Serum-Product.png" alt="Avatar"
-                                    class="w-full h-full object-cover" />
+                                <img src="assets/images/studio.png" alt="Avatar" class="w-full h-full object-cover" />
                             </div>
                             <h2
-                                class="text-8xl font-semibold text-white max-w-xl text-center capitalize leading-[0.9] mb-8">
-                                Serum product
+                                class="text-6xl font-semibold text-white max-w-sm text-center capitalize leading-[0.9] mb-6">
+                                Photo studio
                             </h2>
                             <p class="text-xl font-medium text-white capitalize tracking-[5px]">personal project</p>
                         </div>
@@ -152,18 +198,37 @@
 
                 <li class="section-item">
                     <div class="grid grid-cols-2 items-center justify-center gap-10">
-                        <div class="bg-white p-10 rounded-xl image-wrapper h-[600px] ">
-                            <img src="assets/images/Serum-Product.png" alt="Portfolio"
-                                class="w-full h-full object-cover main-img " />
+                        <div class="flex flex-col gap-5 justify-center items-center text-content">
+                            <div class="bg-white rounded-full w-20 h-20 overflow-hidden border-2 border-white mb-6">
+                                <img src="assets/images/porto1.png" alt="Avatar" class="w-full h-full object-cover" />
+                            </div>
+                            <h2
+                                class="text-6xl font-semibold text-white max-w-sm text-center capitalize leading-[0.9] mb-6">
+                                Web Portfolio
+                            </h2>
+                            <p class="text-xl font-medium text-white capitalize tracking-[5px]">personal project</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 backdrop-blur-xs p-10 rounded-xl image-wrapper h-[375px] ">
+                            <img src="assets/images/porto1.png" alt="Portfolio"
+                                class="w-full h-full object-contain main-img " />
+                        </div>
+                    </div>
+                </li>
+
+                <li class="section-item">
+                    <div class="grid grid-cols-2 items-center justify-center gap-10">
+                        <div class="bg-white bg-opacity-20 backdrop-blur-xs p-10 rounded-xl image-wrapper h-[375px] ">
+                            <img src="assets/images/mindsetFitness.png" alt="Portfolio"
+                                class="w-full h-full object-contain main-img " />
                         </div>
                         <div class="flex flex-col gap-5 justify-center items-center text-content">
                             <div class="bg-white rounded-full w-20 h-20 overflow-hidden border-2 border-white mb-6">
-                                <img src="assets/images/Serum-Product.png" alt="Avatar"
+                                <img src="assets/images/mindsetFitness.png" alt="Avatar"
                                     class="w-full h-full object-cover" />
                             </div>
                             <h2
-                                class="text-8xl font-semibold text-white max-w-xl text-center capitalize leading-[0.9] mb-8">
-                                Serum product
+                                class="text-6xl font-semibold text-white max-w-sm text-center capitalize leading-[0.9] mb-6">
+                                Mindset And Fitness
                             </h2>
                             <p class="text-xl font-medium text-white capitalize tracking-[5px]">personal project</p>
                         </div>
@@ -172,18 +237,38 @@
 
                 <li class="section-item">
                     <div class="grid grid-cols-2 items-center justify-center gap-10">
-                        <div class="bg-white p-10 rounded-xl image-wrapper h-[600px] ">
-                            <img src="assets/images/Serum-Product.png" alt="Portfolio"
-                                class="w-full h-full object-cover main-img " />
-                        </div>
                         <div class="flex flex-col gap-5 justify-center items-center text-content">
                             <div class="bg-white rounded-full w-20 h-20 overflow-hidden border-2 border-white mb-6">
-                                <img src="assets/images/Serum-Product.png" alt="Avatar"
+                                <img src="assets/images/furniture.png" alt="Avatar"
                                     class="w-full h-full object-cover" />
                             </div>
                             <h2
-                                class="text-8xl font-semibold text-white max-w-xl text-center capitalize leading-[0.9] mb-8">
-                                Serum product
+                                class="text-6xl font-semibold text-white max-w-sm text-center capitalize leading-[0.9] mb-6">
+                                Furniture industry
+                            </h2>
+                            <p class="text-xl font-medium text-white capitalize tracking-[5px]">personal project</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 backdrop-blur-xs p-10 rounded-xl image-wrapper h-[375px] ">
+                            <img src="assets/images/furniture.png" alt="Portfolio"
+                                class="w-full h-full object-contain main-img " />
+                        </div>
+                    </div>
+                </li>
+
+                <li class="section-item">
+                    <div class="grid grid-cols-2 items-center justify-center gap-10">
+                        <div class="bg-white bg-opacity-20 backdrop-blur-xs p-10 rounded-xl image-wrapper h-[375px] ">
+                            <img src="assets/images/messenger.png" alt="Portfolio"
+                                class="w-full h-full object-contain main-img " />
+                        </div>
+                        <div class="flex flex-col gap-5 justify-center items-center text-content">
+                            <div class="bg-white rounded-full w-20 h-20 overflow-hidden border-2 border-white mb-6">
+                                <img src="assets/images/messenger.png" alt="Avatar"
+                                    class="w-full h-full object-cover" />
+                            </div>
+                            <h2
+                                class="text-6xl font-semibold text-white max-w-sm text-center capitalize leading-[0.9] mb-6">
+                                Messenger <br> app
                             </h2>
                             <p class="text-xl font-medium text-white capitalize tracking-[5px]">personal project</p>
                         </div>
@@ -192,18 +277,154 @@
 
                 <li class="section-item">
                     <div class="grid grid-cols-2 items-center justify-center gap-10">
-                        <div class="bg-white p-10 rounded-xl image-wrapper h-[600px] ">
-                            <img src="assets/images/Serum-Product.png" alt="Portfolio"
-                                class="w-full h-full object-cover main-img " />
-                        </div>
                         <div class="flex flex-col gap-5 justify-center items-center text-content">
                             <div class="bg-white rounded-full w-20 h-20 overflow-hidden border-2 border-white mb-6">
-                                <img src="assets/images/Serum-Product.png" alt="Avatar"
+                                <img src="assets/images/technology.png" alt="Avatar"
                                     class="w-full h-full object-cover" />
                             </div>
                             <h2
-                                class="text-8xl font-semibold text-white max-w-xl text-center capitalize leading-[0.9] mb-8">
-                                Serum product
+                                class="text-6xl font-semibold text-white max-w-sm text-center capitalize leading-[0.9] mb-6">
+                                AI Technology
+                            </h2>
+                            <p class="text-xl font-medium text-white capitalize tracking-[5px]">personal project</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 backdrop-blur-xs p-10 rounded-xl image-wrapper h-[375px] ">
+                            <img src="assets/images/technology.png" alt="Portfolio"
+                                class="w-full h-full object-contain main-img " />
+                        </div>
+                    </div>
+                </li>
+
+                <li class="section-item">
+                    <div class="grid grid-cols-2 items-center justify-center gap-10">
+                        <div class="bg-white bg-opacity-20 backdrop-blur-xs p-10 rounded-xl image-wrapper h-[375px] ">
+                            <img src="assets/images/car.png" alt="Portfolio"
+                                class="w-full h-full object-contain main-img " />
+                        </div>
+                        <div class="flex flex-col gap-5 justify-center items-center text-content">
+                            <div class="bg-white rounded-full w-20 h-20 overflow-hidden border-2 border-white mb-6">
+                                <img src="assets/images/car.png" alt="Avatar" class="w-full h-full object-cover" />
+                            </div>
+                            <h2
+                                class="text-6xl font-semibold text-white max-w-sm text-center capitalize leading-[0.9] mb-6">
+                                Vehicle Services
+                            </h2>
+                            <p class="text-xl font-medium text-white capitalize tracking-[5px]">personal project</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="section-item">
+                    <div class="grid grid-cols-2 items-center justify-center gap-10">
+                        <div class="flex flex-col gap-5 justify-center items-center text-content">
+                            <div class="bg-white rounded-full w-20 h-20 overflow-hidden border-2 border-white mb-6">
+                                <img src="assets/images/dmBusiness.png" alt="Avatar"
+                                    class="w-full h-full object-cover" />
+                            </div>
+                            <h2
+                                class="text-6xl font-semibold text-white max-w-sm text-center capitalize leading-[0.9] mb-6">
+                                Business Management
+                            </h2>
+                            <p class="text-xl font-medium text-white capitalize tracking-[5px]">personal project</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 backdrop-blur-xs p-10 rounded-xl image-wrapper h-[375px] ">
+                            <img src="assets/images/dmBusiness.png" alt="Portfolio"
+                                class="w-full h-full object-contain main-img " />
+                        </div>
+                    </div>
+                </li>
+
+                <li class="section-item">
+                    <div class="grid grid-cols-2 items-center justify-center gap-10">
+                        <div class="bg-white bg-opacity-20 backdrop-blur-xs p-10 rounded-xl image-wrapper h-[375px] ">
+                            <img src="assets/images/financial.png" alt="Portfolio"
+                                class="w-full h-full object-contain main-img " />
+                        </div>
+                        <div class="flex flex-col gap-5 justify-center items-center text-content">
+                            <div class="bg-white rounded-full w-20 h-20 overflow-hidden border-2 border-white mb-6">
+                                <img src="assets/images/financial.png" alt="Avatar"
+                                    class="w-full h-full object-cover" />
+                            </div>
+                            <h2
+                                class="text-6xl font-semibold text-white max-w-sm text-center capitalize leading-[0.9] mb-6">
+                                Financial Services
+                            </h2>
+                            <p class="text-xl font-medium text-white capitalize tracking-[5px]">personal project</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="section-item">
+                    <div class="grid grid-cols-2 items-center justify-center gap-10">
+                        <div class="flex flex-col gap-5 justify-center items-center text-content">
+                            <div class="bg-white rounded-full w-20 h-20 overflow-hidden border-2 border-white mb-6">
+                                <img src="assets/images/first_project.png" alt="Avatar"
+                                    class="w-full h-full object-cover" />
+                            </div>
+                            <h2
+                                class="text-6xl font-semibold text-white max-w-sm text-center capitalize leading-[0.9] mb-6">
+                                Modern Lifestyle
+                            </h2>
+                            <p class="text-xl font-medium text-white capitalize tracking-[5px]">personal project</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 backdrop-blur-xs p-10 rounded-xl image-wrapper h-[375px] ">
+                            <img src="assets/images/first_project.png" alt="Portfolio"
+                                class="w-full h-full object-contain main-img " />
+                        </div>
+                    </div>
+                </li>
+
+                <li class="section-item">
+                    <div class="grid grid-cols-2 items-center justify-center gap-10">
+                        <div class="bg-white bg-opacity-20 backdrop-blur-xs p-10 rounded-xl image-wrapper h-[375px] ">
+                            <img src="assets/images/house.png" alt="Portfolio"
+                                class="w-full h-full object-contain main-img " />
+                        </div>
+                        <div class="flex flex-col gap-5 justify-center items-center text-content">
+                            <div class="bg-white rounded-full w-20 h-20 overflow-hidden border-2 border-white mb-6">
+                                <img src="assets/images/house.png" alt="Avatar" class="w-full h-full object-cover" />
+                            </div>
+                            <h2
+                                class="text-6xl font-semibold text-white max-w-sm text-center capitalize leading-[0.9] mb-6">
+                                House Management
+                            </h2>
+                            <p class="text-xl font-medium text-white capitalize tracking-[5px]">personal project</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="section-item">
+                    <div class="grid grid-cols-2 items-center justify-center gap-10">
+                        <div class="flex flex-col gap-5 justify-center items-center text-content">
+                            <div class="bg-white rounded-full w-20 h-20 overflow-hidden border-2 border-white mb-6">
+                                <img src="assets/images/trade.png" alt="Avatar" class="w-full h-full object-cover" />
+                            </div>
+                            <h2
+                                class="text-6xl font-semibold text-white max-w-sm text-center capitalize leading-[0.9] mb-6">
+                                Trade Management
+                            </h2>
+                            <p class="text-xl font-medium text-white capitalize tracking-[5px]">personal project</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 backdrop-blur-xs p-10 rounded-xl image-wrapper h-[375px] ">
+                            <img src="assets/images/trade.png" alt="Portfolio"
+                                class="w-full h-full object-contain main-img " />
+                        </div>
+                    </div>
+                </li>
+
+                <li class="section-item">
+                    <div class="grid grid-cols-2 items-center justify-center gap-10">
+                        <div class="bg-white bg-opacity-20 backdrop-blur-xs p-10 rounded-xl image-wrapper h-[375px] ">
+                            <img src="assets/images/fitness1.png" alt="Portfolio"
+                                class="w-full h-full object-contain main-img " />
+                        </div>
+                        <div class="flex flex-col gap-5 justify-center items-center text-content">
+                            <div class="bg-white rounded-full w-20 h-20 overflow-hidden border-2 border-white mb-6">
+                                <img src="assets/images/fitness1.png" alt="Avatar" class="w-full h-full object-cover" />
+                            </div>
+                            <h2
+                                class="text-6xl font-semibold text-white max-w-sm text-center capitalize leading-[0.9] mb-6">
+                                Fitness Industry
                             </h2>
                             <p class="text-xl font-medium text-white capitalize tracking-[5px]">personal project</p>
                         </div>
@@ -246,7 +467,7 @@
                             </div>
                             <div>
                                 <h4 class=" text-2xl font-semibold text-white uppercase">Address</h4>
-                                <p class=" text-xl text-white max-w-sm">USA street 102, road 22 house of street
+                                <p class=" text-xl text-white max-w-sm">New Sunny Enclave, IG Street #25**, Mohali
                                 </p>
                             </div>
                         </div>
@@ -256,8 +477,8 @@
                             </div>
                             <div>
                                 <h4 class=" text-2xl font-semibold text-white uppercase">E-mail</h4>
-                                <p class=" text-xl text-white max-w-sm">designer@yourmail.com</p>
-                                <p class=" text-xl text-white max-w-sm">thedesigner@gmail.com</p>
+                                <p class=" text-xl text-white max-w-sm">pxfixerjd@gmail.com</p>
+                                <p class=" text-xl text-white max-w-sm">pxfixerjd@gmail.com</p>
                             </div>
                         </div>
                         <div class="gsap-fade grid grid-cols-[auto_1fr] gap-10">
@@ -266,8 +487,8 @@
                             </div>
                             <div>
                                 <h4 class=" text-2xl font-semibold text-white uppercase">Call Me</h4>
-                                <p class=" text-xl text-white max-w-sm">0000 - 000 - 000 00</p>
-                                <p class=" text-xl text-white max-w-sm">+1234 - 000 - 000</p>
+                                <p class=" text-xl text-white max-w-sm">964 - 6394 - 263</p>
+                                <p class=" text-xl text-white max-w-sm">964 - 6394 - 263</p>
                             </div>
                         </div>
                     </div>

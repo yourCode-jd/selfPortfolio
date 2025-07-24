@@ -477,7 +477,7 @@ items.forEach((item, index) => {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: item,
-      start: "top 60%",
+      start: "top 80%",
       end: "bottom 20%",
       scrub: 2,
       toggleActions: "play reverse play reverse", // Allow reverse
