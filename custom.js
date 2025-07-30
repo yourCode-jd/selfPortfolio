@@ -1,19 +1,3 @@
-function scalePageToFit() {
-  const baseWidth = 1440;
-  const baseHeight = window.innerHeight;
-
-  const scaleX = window.innerWidth / baseWidth;
-  const scaleY = window.innerHeight / baseHeight;
-
-  const scale = Math.min(scaleX, scaleY);
-
-  const page = document.getElementById("pageWrapper");
-  page.style.transform = `scale(${scale})`;
-}
-
-window.addEventListener("resize", scalePageToFit);
-window.addEventListener("load", scalePageToFit);
-
 // body overflow hidden
 document.addEventListener("DOMContentLoaded", function () {
   const nav = document.getElementById("Hamburger");
