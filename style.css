@@ -577,7 +577,7 @@ small {
     }
 
     h3 span {
-        padding: 0;
+        padding: 0 !important;
     }
 
     .portfolio #slideNavigation.slideMenu::before {
