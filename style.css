@@ -517,6 +517,7 @@ small {
         width: 80vmax;
         height: 80vmax;
         opacity: 0.8;
+        transform: unset;
     }
 
     #triangleSection {
