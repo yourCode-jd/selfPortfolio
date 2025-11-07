@@ -490,10 +490,10 @@ small {
     }
 
     .line {
-        opacity: 1;
-        transform: unset;
-        filter: unset;
-        display: inline;
+        opacity: 1 !important;
+        transform: unset !important;
+        filter: unset !important;
+        display: inline !important;
     }
 
     .content {
@@ -569,5 +569,17 @@ small {
 
     [data-percentage="45"] {
         width: 45% !important;
+    }
+
+    #about h3 span::after {
+        display: none;
+    }
+
+    .about h3 span {
+        padding: 0;
+    }
+
+    .portfolio #slideNavigation.slideMenu::before {
+        background: rgba(252, 70, 107, 1) 0%;
     }
 }
