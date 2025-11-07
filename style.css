@@ -571,11 +571,11 @@ small {
         width: 45% !important;
     }
 
-    #about h3 span::after {
+    h3 span::after {
         display: none;
     }
 
-    .about h3 span {
+    h3 span {
         padding: 0;
     }
 
