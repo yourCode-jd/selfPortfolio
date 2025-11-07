@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=1440, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 
 
     <!-- favicon -->
@@ -25,13 +26,13 @@
 
     <!-- animated background left line -->
 
-    <div class="Sline fixed top-0 left-80 w-[2px] h-full bg-white bg-opacity-0 z-10">
+    <div class="Sline fixed top-0 sm:left-80 left-[95%] w-[2px] h-full bg-white bg-opacity-0 z-10">
         <div class="scroll-indicator w-full h-[50%] bg-gradient-to-t from-white to-transparent"></div>
     </div>
 
     <!-- animated background right line -->
 
-    <div class="Sline fixed top-0 right-80 w-[2px] h-full bg-white bg-opacity-0 z-10">
+    <div class="Sline fixed top-0 sm:right-80 right-[95%] w-[2px] h-full bg-white bg-opacity-0 z-10">
         <div class="scroll-indicator w-full h-[50%] bg-gradient-to-t from-white to-transparent"></div>
     </div>
 
@@ -53,7 +54,7 @@
                 <!-- Logo -->
                 <a href="/index.html" class="text-4xl font-bold uppercase cursor-pointer text-white">JD</a>
                 <!-- Hamburger -->
-                <div id="Hamburger" class="w-10 h-auto flex flex-col gap-2 cursor-pointer z-10"
+                <div id="Hamburger" class="lg:w-10 w-8 h-auto flex flex-col gap-2 cursor-pointer z-10"
                     onclick="toggleHighlight(), toggleCross()">
                     <span class="w-full h-1 rounded bg-white"></span>
                     <span class="w-full h-1 rounded bg-white"></span>
@@ -65,13 +66,13 @@
                         <source src="/assets/images/menuVideo3.mp4" type="video/mp4" />
                     </video> -->
                     <a href="/index.html"
-                        class="text-white hover:text-[#211c84] text-8xl font-bold uppercase transition-all">Home</a>
+                        class="text-white hover:text-[#211c84] lg:text-8xl md:text-6xl text-4xl font-bold uppercase transition-all">Home</a>
                     <a href="./about.html"
-                        class="text-white hover:text-[#211c84] text-8xl font-bold uppercase transition-all">About</a>
+                        class="text-white hover:text-[#211c84] lg:text-8xl md:text-6xl text-4xl font-bold uppercase transition-all">About</a>
                     <a href="./contact.html"
-                        class="text-white hover:text-[#211c84] text-8xl font-bold uppercase transition-all ">Contact</a>
+                        class="text-white hover:text-[#211c84] lg:text-8xl md:text-6xl text-4xl font-bold uppercase transition-all ">Contact</a>
                     <a href="./portfolio.html"
-                        class="text-white hover:text-[#211c84] text-8xl font-bold uppercase transition-all ">Portfolio</a>
+                        class="text-white hover:text-[#211c84] lg:text-8xl md:text-6xl text-4xl font-bold uppercase transition-all ">Portfolio</a>
                 </div>
             </nav>
 
@@ -84,12 +85,12 @@
             </div>
 
             <!-- Hero Content -->
-            <div class="flex items-center justify-center h-screen relative ">
+            <div class="flex items-center justify-center lg:h-screen h-[70vh] relative ">
                 <a href="#" class="relative">
                     <h1 id="bannerTitle"
-                        class="text-[80px] md:text-[150px] lg:text-[200px] xl:text-[300px] font-bold uppercase">
+                        class=" text-[60px] sm:text-[80px] md:text-[150px] lg:text-[200px] xl:text-[300px] font-bold uppercase">
                         Designer<img src="assets/images/hi.png" alt=""
-                            class=" absolute top-0 left-1/2 -translate-x-1/2" />
+                            class=" absolute w-16 sm:w-auto sm:top-0 -top-16 left-1/2 -translate-x-1/2" />
                     </h1>
                     <div class="Sline rotate-0 absolute top-0 left-0 w-[2px] h-full bg-white bg-opacity-0 z-10">
                         <div
@@ -126,9 +127,10 @@
     </section>
 
     <!-- About -->
-    <section class="max-w-screen-xl mx-auto h-screen flex items-center justify-center">
+    <section class="max-w-screen-xl lg:max-w-full lg:h-screen flex items-center justify-center">
         <div class="px-5 md:px-8 lg:px-12">
-            <h3 class="text-container text-5xl text-white font-bold text-center space-y-5">
+            <h3
+                class="text-container text-xl lg:text-5xl sm:text-3xl text-white lg:font-bold font-normal text-center sm:space-y-5 space-y-2">
                 <div class="line">I'm Jaspreet, a professional </div>
                 <div class="line"><span>web designer</span> specializing in responsive design,</div>
                 <div class="line">UI/UX, and creative <span>front-end solutions.</span></div>
@@ -147,18 +149,20 @@
         <div class="step">
             <div
                 class="content w-full max-w-7xl mx-auto flex justify-center flex-col items-center border-[#211c84] rounded-lg">
-                <small class="text-[135px] leading-[1] font-bold stroke-text text-transparent">My Expertise</small>
-                <p class="text-xl text-[#211c84] font-medium w-3/5 text-center mt-3">
+                <small
+                    class="text-[32px] sm:text-[80px] lg:text-[135px] sm:leading-[1] font-bold sm:stroke-text sm:text-transparent text-white">My
+                    Expertise</small>
+                <p class="text-xl text-white sm:text-[#211c84] font-medium sm:w-3/5 w-full text-center mt-3">
                     Business consulting consultants provide expert advice and guida
                     businesses to help them improve their performance, efficiency, and
                     organizational
                 </p>
             </div>
             <div
-                class="relative content content-bg w-full max-w-7xl mx-auto flex flex-row gap-5 items-center border-[#211c84] rounded-lg p-10 backdrop-blur-xl group">
-                <div class="w-1/2 flex items-center gap-3">
+                class="relative content content-bg w-full max-w-7xl mx-auto flex sm:flex-row flex-col sm:gap-5 gap-3 items-center border-[#211c84] rounded-lg sm:p-10 p-4 backdrop-blur-xl group">
+                <div class="sm:w-1/2 flex items-center gap-3">
                     <div
-                        class="border border-white rounded-full p-4 w-16 h-16 transition-all duration-[1500ms] relative left-0 group-hover:left-[90%]">
+                        class="border border-white rounded-full sm:p-4 p-3  sm:w-16 w-12 sm:h-16 h-12 transition-all duration-[1500ms] relative left-0 group-hover:left-[90%]">
                         <img src="assets/images/logo-1.svg" alt="icon" />
                     </div>
 
@@ -167,32 +171,32 @@
                         Ui/visual
                         Design</h1>
                 </div>
-                <p class="text-xl text-white font-medium w-2/5 ml-auto">
+                <p class="text-center sm:text-left sm:text-xl text-base text-white font-medium sm:w-2/5 ml-auto">
                     A personal portfolio is a curated collection of an individual's
                     professional work, showcasing their skills
                 </p>
             </div>
             <div
-                class="relative content content-bg w-full max-w-7xl mx-auto flex flex-row gap-5 items-center border-[#211c84] rounded-lg p-10 backdrop-blur-xl group">
-                <div class="w-1/2 flex items-center gap-3">
+                class="relative content content-bg w-full max-w-7xl mx-auto flex flex-col sm:flex-row sm:gap-5 gap-3 items-center border-[#211c84] rounded-lg sm:p-10 p-4 backdrop-blur-xl group">
+                <div class="sm:w-1/2 flex items-center gap-3">
                     <div
-                        class="border border-white rounded-full p-4 w-16 h-16 transition-all duration-[1500ms] relative left-0 group-hover:left-[90%]">
+                        class="border border-white rounded-full sm:p-4 p-3  sm:w-16 w-12 sm:h-16 h-12 transition-all duration-[1500ms] relative left-0 group-hover:left-[90%]">
                         <img src="assets/images/logo-2.svg" alt="icon" />
                     </div>
                     <h1
                         class="text-3xl font-bold text-white transition-all duration-[1500ms] translate-x-0 group-hover:-translate-x-16">
                         Branding Design</h1>
                 </div>
-                <p class="text-xl text-white font-medium w-2/5 ml-auto">
+                <p class="text-center sm:text-left sm:text-xl text-base text-white font-medium sm:w-2/5 ml-auto">
                     I specialize in creating solutions that are not only visually
                     engaging but also align with business goals
                 </p>
             </div>
             <div
-                class="relative content content-bg w-full max-w-7xl mx-auto flex flex-row gap-5 items-center border-[#211c84] rounded-lg p-10 backdrop-blur-xl group">
-                <div class="w-1/2 flex items-center gap-3">
+                class="relative content content-bg w-full max-w-7xl mx-auto flex flex-col sm:flex-row sm:gap-5 gap-3 items-center border-[#211c84] rounded-lg sm:p-10 p-4 backdrop-blur-xl group">
+                <div class="sm:w-1/2 flex items-center gap-3">
                     <div
-                        class="border border-white rounded-full p-4 w-16 h-16 transition-all duration-[1500ms] relative left-0 group-hover:left-[90%]">
+                        class="border border-white rounded-full sm:p-4 p-3  sm:w-16 w-12 sm:h-16 h-12 transition-all duration-[1500ms] relative left-0 group-hover:left-[90%]">
                         <img src="assets/images/logo-3.svg" alt="icon" />
                     </div>
                     <!-- <small class="text-base text-[#211C84] font-medium">My Expertise</small> -->
@@ -200,7 +204,7 @@
                         class="text-3xl font-bold text-white transition-all duration-[1500ms] translate-x-0 group-hover:-translate-x-16">
                         Motion Design</h1>
                 </div>
-                <p class="text-xl text-white font-medium w-2/5 ml-auto">
+                <p class="text-center sm:text-left sm:text-xl text-base text-white font-medium sm:w-2/5 ml-auto">
                     Each one showcases my approach and dedication to detail, creativity,
                     and results-driven outcomes.
                 </p>
@@ -210,7 +214,7 @@
 
     <!-- triangle -->
 
-    <section id="triangleSection" class="flex items-center justify-center relative overflow-hidden h-screen">
+    <section id="triangleSection" class="flex items-center justify-center relative overflow-hidden lg:h-screen ">
         <!-- shapes -->
         <!-- <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
             <defs>
@@ -224,12 +228,12 @@
             <use class="gsap-fade opacity-20" x="400" y="-100" href="#some-square" />
         </svg> -->
         <div
-            class="absolute top-0 left-0 w-full h-full  bg-[url('assets/images/blob-bg.svg')] bg-cover z-0 animate-pulse opacity-60 blur-3xl">
+            class="absolute top-0 left-0 w-full h-full  bg-[url('assets/images/blob-bg.svg')] bg-cover z-0 animate-pulse opacity-60 blur-3xl hidden sm:block">
         </div>
 
         <!-- designer -->
         <h2
-            class="gsap-text-stroke textStroke text-transparent text-[500px] font-bold text-center absolute z-0 top-10 left-0 w-full h-full leading-[0.8] opacity-50 blur-sm">
+            class="gsap-text-stroke textStroke text-transparent text-[80px] lg:text-[500px] sm:text-[300px] font-bold text-center static sm:absolute z-0 top-10 left-0 w-full h-full leading-[0.8] opacity-50 sm:blur-sm blur-xs">
             UX UI Designer
         </h2>
 
@@ -324,27 +328,27 @@
 
     <!-- About  -->
 
-    <section class="pt-40 relative overflow-hidden">
+    <section class="lg:pt-40 sm:pt-20 pt-10 relative overflow-hidden">
         <div
-            class="absolute top-0 left-0 w-full h-full  bg-[url('assets/images/blob-bg.svg')] bg-cover z-0 animate-pulse opacity-80 blur-3xl">
+            class="absolute top-0 left-0 w-full h-full  bg-[url('assets/images/blob-bg.svg')] bg-cover sm:z-0 -z-10 animate-pulse opacity-80 blur-3xl">
         </div>>
 
         <div class="px-5 md:px-8 lg:px-12">
             <div class="max-w-7xl mx-auto">
-                <div class="max-w-7xl mx-auto items-center grid grid-cols-[1fr_1fr] h-full gap-20">
+                <div class="max-w-7xl mx-auto items-center grid grid-cols-[1fr_1fr] h-full sm:gap-20 gap-4">
                     <span
-                        class="max-w-md mr-auto gsap-fade textStroke text-[135px] leading-none font-bold stroke-text text-transparent">About
+                        class="max-w-md mr-auto gsap-fade textStroke lg:text-[135px] sm:text-[80px] text-5xl leading-none font-bold sm:stroke-text sm:text-transparent text-white">About
                         Me</span>
                     <div
-                        class="gsap-fade text-[550px] font-bold text-center leading-[0.7] tracking-tighter bg-gradient-to-r from-white to-[#4D55CC] bg-clip-text text-transparent">
+                        class="gsap-fade lg:text-[550px] sm:text-[350px] text-[100px] font-bold text-center leading-[0.7] tracking-tighter bg-gradient-to-r from-white to-[#4D55CC] bg-clip-text text-transparent">
                         <h3
-                            class="absolute -left-[150px] top-40 -rotate-90 gsap-fade text-5xl font-medium bg-gradient-to-t from-white to-[#4D55CC] bg-clip-text text-transparent">
+                            class="static sm:absolute sm:-left-[150px] top-40 sm:-rotate-90 gsap-fade lg:text-5xl sm:text-3xl text-xl font-medium bg-gradient-to-t from-white to-[#4D55CC] bg-clip-text text-transparent">
                             My
                             Experience</h3>5+
                     </div>
                 </div>
-                <div class="mt-24 grid grid-cols-2 gap-10 max-w-screen-lg mx-auto">
-                    <div class="stepContent mt-10 w-full grid grid-cols-1 gap-10">
+                <div class="sm:mt-24 mt-8 grid sm:grid-cols-2 grid-cols-1 gap-10 max-w-screen-lg mx-auto">
+                    <div class="stepContent sm:mt-1 sm:w-auto mt-8 w-full grid grid-cols-1 sm:gap-10 gap-4">
                         <div
                             class="gsap-fade content-bg w-full flex flex-col gap-1 border-[#211c84] rounded-lg p-5 backdrop-blur-xl">
                             <div class="flex items-start flex-col">
@@ -394,7 +398,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="stepContent mt-10 w-full grid grid-cols-1 gap-10">
+                    <div class="stepContent sm:mt-1 sm:w-auto w-full grid grid-cols-1 sm:gap-10 gap-4">
                         <div
                             class="gsap-fade content-bg w-full flex flex-col gap-1 border-[#211c84] rounded-lg p-5 backdrop-blur-xl">
                             <div class="flex flex-col items-start">
@@ -450,96 +454,109 @@
 
     <!-- progress bar -->
 
-    <section class="z-10 py-32 relative">
-        <div class="absolute top-0 left-0 w-full h-[100px] flex">
+    <section class="z-10 sm:py-32 py-12 relative">
+        <div class="hidden absolute top-0 left-0 w-full h-[100px] lg:flex">
         </div>
         <div class="px-5 md:px-8 lg:px-12">
             <div class="max-w-7xl mx-auto">
                 <div class="mb-16 items-center">
                     <span
-                        class=" max-w-md mr-auto gsap-fade textStroke text-9xl font-bold stroke-text text-transparent">Skills
+                        class=" max-w-md mr-auto gsap-fade textStroke lg:text-9xl sm:text-7xl text-5xl font-bold sm:stroke-text sm:text-transparent text-white">Skills
                     </span>
                 </div>
                 <div class="stepContent  w-full">
-                    <div class="w-full flex flex-col gap-12 max-w-screen-lg mx-auto">
+                    <div class="w-full flex flex-col sm:gap-12 gap-6 max-w-screen-lg mx-auto">
 
                         <!-- Single Progress Bar -->
                         <div class="skill relative gsap-fade">
                             <div
-                                class="absolute -top-5 -left-10 text-5xl textStroke text-transparent font-bold  opacity-60 mb-2">
+                                class="absolute -top-5 sm:-left-10 -left-0 sm:text-5xl text-3xl textStroke text-transparent font-bold  opacity-60 mb-2">
                                 HTML</div>
                             <div class="progress-bar-wrapper bg-[#B5A8D5]  bg-opacity-10 w-full h-10 ">
                                 <div data-percentage="98"
                                     class="progress-bar h-full  bg-gradient-to-r  from-[#4D55CC] to-white w-0">
                                     <span
-                                        class="percentage-label absolute -right-10 bg-clip-text text-transparent top-1/2 -translate-y-1/2 text-sm text-white font-bold opacity-0">0%</span>
+                                        class="percentage-label absolute right-0 sm:-right-10 bg-clip-text sm:text-transparent top-1/2 -translate-y-1/2 text-sm text-white font-bold opacity-1">0%</span>
                                 </div>
                             </div>
                         </div>
 
                         <div class="skill relative gsap-fade">
                             <div
-                                class="absolute -top-5 -left-10 text-5xl textStroke text-transparent font-bold  opacity-60 mb-2">
+                                class="absolute -top-5 sm:-left-10 -left-0 sm:text-5xl text-3xl textStroke text-transparent font-bold  opacity-60 mb-2">
                                 CSS</div>
                             <div class="progress-bar-wrapper bg-[#B5A8D5]  bg-opacity-10 w-full h-10 ">
                                 <div data-percentage="95"
                                     class="progress-bar h-full  bg-gradient-to-r  from-[#4D55CC] to-white w-0">
                                     <span
-                                        class="percentage-label absolute -right-10 bg-clip-text text-transparent top-1/2 -translate-y-1/2 text-sm text-white font-bold opacity-0">0%</span>
+                                        class="percentage-label absolute right-0 sm:-right-10 bg-clip-text sm:text-transparent top-1/2 -translate-y-1/2 text-sm text-white font-bold opacity-1">0%</span>
                                 </div>
                             </div>
                         </div>
 
                         <div class="skill relative gsap-fade">
                             <div
-                                class="absolute -top-5 -left-10 text-5xl textStroke text-transparent font-bold  opacity-60 mb-2">
+                                class="absolute -top-5 sm:-left-10 -left-0 sm:text-5xl text-3xl textStroke text-transparent font-bold  opacity-60 mb-2">
+                                Tailwind</div>
+                            <div class="progress-bar-wrapper bg-[#B5A8D5]  bg-opacity-10 w-full h-10 ">
+                                <div data-percentage="92"
+                                    class="progress-bar h-full  bg-gradient-to-r  from-[#4D55CC] to-white w-0">
+                                    <span
+                                        class="percentage-label absolute right-0 sm:-right-10 bg-clip-text sm:text-transparent top-1/2 -translate-y-1/2 text-sm text-white font-bold opacity-1">0%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill relative gsap-fade">
+                            <div
+                                class="absolute -top-5 sm:-left-10 -left-0 sm:text-5xl text-3xl textStroke text-transparent font-bold  opacity-60 mb-2">
                                 Javascript
                             </div>
                             <div class="progress-bar-wrapper bg-[#B5A8D5]  bg-opacity-10 w-full h-10 ">
                                 <div data-percentage="60"
                                     class="progress-bar h-full  bg-gradient-to-r  from-[#4D55CC] to-white w-0">
                                     <span
-                                        class="percentage-label absolute -right-10 bg-clip-text text-transparent top-1/2 -translate-y-1/2 text-sm text-white font-bold opacity-0">0%</span>
+                                        class="percentage-label absolute right-0 sm:-right-10 bg-clip-text sm:text-transparent top-1/2 -translate-y-1/2 text-sm text-white font-bold opacity-1">0%</span>
                                 </div>
                             </div>
                         </div>
 
                         <div class="skill relative gsap-fade">
                             <div
-                                class="absolute -top-5 -left-10 text-5xl textStroke text-transparent font-bold  opacity-60 mb-2">
+                                class="absolute -top-5 sm:-left-10 -left-0 sm:text-5xl text-3xl textStroke text-transparent font-bold  opacity-60 mb-2">
                                 GSAP</div>
                             <div class="progress-bar-wrapper bg-[#B5A8D5]  bg-opacity-10 w-full h-10 ">
                                 <div data-percentage="75"
                                     class="progress-bar h-full  bg-gradient-to-r  from-[#4D55CC] to-white w-0">
                                     <span
-                                        class="percentage-label absolute -right-10 bg-clip-text text-transparent top-1/2 -translate-y-1/2 text-sm text-white font-bold opacity-0">0%</span>
+                                        class="percentage-label absolute right-0 sm:-right-10 bg-clip-text sm:text-transparent top-1/2 -translate-y-1/2 text-sm text-white font-bold opacity-1">0%</span>
                                 </div>
                             </div>
                         </div>
 
                         <div class="skill relative gsap-fade">
                             <div
-                                class="absolute -top-5 -left-10 text-5xl textStroke text-transparent font-bold  opacity-60 mb-2">
+                                class="absolute -top-5 sm:-left-10 -left-0 sm:text-5xl text-3xl textStroke text-transparent font-bold  opacity-60 mb-2">
                                 Figma</div>
                             <div class="progress-bar-wrapper bg-[#B5A8D5]  bg-opacity-10 w-full h-10 ">
                                 <div data-percentage="80"
                                     class="progress-bar h-full  bg-gradient-to-r  from-[#4D55CC] to-white w-0">
                                     <span
-                                        class="percentage-label absolute -right-10 bg-clip-text text-transparent top-1/2 -translate-y-1/2 text-sm text-white font-bold opacity-0">0%</span>
+                                        class="percentage-label absolute right-0 sm:-right-10 bg-clip-text sm:text-transparent top-1/2 -translate-y-1/2 text-sm text-white font-bold opacity-1">0%</span>
                                 </div>
                             </div>
                         </div>
 
                         <div class="skill relative gsap-fade">
                             <div
-                                class="absolute -top-5 -left-10 text-5xl textStroke text-transparent font-bold  opacity-60 mb-2">
+                                class="absolute -top-5 sm:-left-10 -left-0 sm:text-5xl text-3xl textStroke text-transparent font-bold  opacity-60 mb-2">
                                 Photoshop
                             </div>
                             <div class="progress-bar-wrapper bg-[#B5A8D5]  bg-opacity-10 w-full h-10 ">
                                 <div data-percentage="90"
                                     class="progress-bar h-full  bg-gradient-to-r  from-[#4D55CC] to-white w-0">
                                     <span
-                                        class="percentage-label absolute -right-10 bg-clip-text text-transparent top-1/2 -translate-y-1/2 text-sm text-white font-bold opacity-0">0%</span>
+                                        class="percentage-label absolute right-0 sm:-right-10 bg-clip-text sm:text-transparent top-1/2 -translate-y-1/2 text-sm text-white font-bold opacity-1">0%</span>
                                 </div>
                             </div>
                         </div>
@@ -547,35 +564,49 @@
 
                         <div class="skill relative gsap-fade">
                             <div
-                                class="absolute -top-5 -left-10 text-5xl textStroke text-transparent font-bold  opacity-60 mb-2">
+                                class="absolute -top-5 sm:-left-10 -left-0 sm:text-5xl text-3xl textStroke text-transparent font-bold  opacity-60 mb-2">
                                 Shopify
                             </div>
                             <div class="progress-bar-wrapper bg-[#B5A8D5]  bg-opacity-10 w-full h-10 ">
                                 <div data-percentage="70"
                                     class="progress-bar h-full  bg-gradient-to-r  from-[#4D55CC] to-white w-0">
                                     <span
-                                        class="percentage-label absolute -right-10 bg-clip-text text-transparent top-1/2 -translate-y-1/2 text-sm text-white font-bold opacity-0">0%</span>
+                                        class="percentage-label absolute right-0 sm:-right-10 bg-clip-text sm:text-transparent top-1/2 -translate-y-1/2 text-sm text-white font-bold opacity-1">0%</span>
                                 </div>
                             </div>
                         </div>
 
                         <div class="skill relative gsap-fade">
                             <div
-                                class="absolute -top-5 -left-10 text-5xl textStroke text-transparent font-bold  opacity-60 mb-2">
+                                class="absolute -top-5 sm:-left-10 -left-0 sm:text-5xl text-3xl textStroke text-transparent font-bold  opacity-60 mb-2">
+                                React Frontend
+                            </div>
+                            <div class="progress-bar-wrapper bg-[#B5A8D5]  bg-opacity-10 w-full h-10 ">
+                                <div data-percentage="65"
+                                    class="progress-bar h-full  bg-gradient-to-r  from-[#4D55CC] to-white w-0">
+                                    <span
+                                        class="percentage-label absolute right-0 sm:-right-10 bg-clip-text sm:text-transparent top-1/2 -translate-y-1/2 text-sm text-white font-bold opacity-1">0%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill relative gsap-fade">
+                            <div
+                                class="absolute -top-5 sm:-left-10 -left-0 sm:text-5xl text-3xl textStroke text-transparent font-bold  opacity-60 mb-2">
                                 Wordpress
                             </div>
                             <div class="progress-bar-wrapper bg-[#B5A8D5]  bg-opacity-10 w-full h-10 ">
                                 <div data-percentage="60"
                                     class="progress-bar h-full  bg-gradient-to-r  from-[#4D55CC] to-white w-0">
                                     <span
-                                        class="percentage-label absolute -right-10 bg-clip-text text-transparent top-1/2 -translate-y-1/2 text-sm text-white font-bold opacity-0">0%</span>
+                                        class="percentage-label absolute right-0 sm:-right-10 bg-clip-text sm:text-transparent top-1/2 -translate-y-1/2 text-sm text-white font-bold opacity-1">0%</span>
                                 </div>
                             </div>
                         </div>
 
                         <div class="skill relative gsap-fade">
                             <div
-                                class="absolute -top-5 -left-10 text-5xl textStroke text-transparent font-bold  opacity-60 mb-2">
+                                class="absolute -top-5 sm:-left-10 -left-0 sm:text-5xl text-3xl textStroke text-transparent font-bold  opacity-60 mb-2">
                                 Big
                                 commerce
                             </div>
@@ -583,7 +614,7 @@
                                 <div data-percentage="45"
                                     class="progress-bar h-full  bg-gradient-to-r  from-[#4D55CC] to-white w-0">
                                     <span
-                                        class="percentage-label absolute -right-10 bg-clip-text text-transparent top-1/2 -translate-y-1/2 text-sm text-white font-bold opacity-0">0%</span>
+                                        class="percentage-label absolute right-0 sm:-right-10 bg-clip-text sm:text-transparent top-1/2 -translate-y-1/2 text-sm text-white font-bold opacity-1">0%</span>
                                 </div>
                             </div>
                         </div>
@@ -597,17 +628,19 @@
 
     <!-- Portfolio -->
 
-    <section class="py-32 relative overflow-hidden">
+    <section class="sm:py-32 py-12 relative overflow-hidden">
         <div
             class="absolute top-0 left-0 w-full h-full bg-[url('assets/images/liquid.jpeg')] bg-cover -z-10 blur-[70px] opacity-40 ">
         </div>
         <div class="px-5 md:px-8 lg:px-12">
             <div class="max-w-7xl mx-auto z-10">
 
-                <div class="flex gap-44 items-center justify-center max-w-screen-xl mx-auto">
+                <div
+                    class="flex md:flex-row flex-col lg:gap-44 sm:gap-22 gap-10 items-center justify-center max-w-screen-xl mx-auto">
 
                     <!-- Left: Card Stack -->
-                    <div id="cardStack" class="gsap-fade relative w-[550px] h-[650px] mr-10">
+                    <div id="cardStack"
+                        class="gsap-fade relative md:w-[550px] w-[350px] md:h-[650px] h-[450px] sm:mr-10">
                         <!-- Cards (add as many as needed) -->
                         <div data-index="1"
                             class="card absolute w-full h-full bg-white text-black rounded-2xl shadow-xl flex items-center justify-center flex-col p-10 overflow-hidden">
@@ -643,7 +676,7 @@
                             </div>
                         </div>
                         <div data-index="4"
-                            class="card absolute w-full h-full  bg-white text-black rounded-2xl shadow-xl flex items-center justify-center flex-col p-10 overflow-hidden">
+                            class="card absolute w-full h-full  bg-white text-black rounded-2xl shadow-xl flex items-center justify-center flex-col sm:p-10 p-6 overflow-hidden">
                             <a href="https://yourcode-jd.github.io/Fitness/" target="_blank" class="w-full h-full">
                                 <img src="assets/images/fitness.png" alt="Portfolio 1"
                                     class="w-full h-full object-cover object-right rounded-2xl">
@@ -656,7 +689,7 @@
                     </div>
 
                     <!-- Right: List Items -->
-                    <div class="space-y-14 text-center relative">
+                    <div class="lg:space-y-14 md:space-y-10 space-y-4 text-center relative">
                         <h2
                             class=" absolute rotate-90 left-36 top-1/2 -translate-y-1/2 text-transparent text-[130px] leading-[0.8] font-bold  textStroke gsap-fade heading-text">
                             Portfolio</h2>
@@ -681,16 +714,19 @@
 
 
     <!-- Contact us -->
-    <section class="relative overflow-hidden h-screen">
+    <section class="relative overflow-hidden sm:h-screen">
         <div class="px-5 md:px-8 lg:px-12 ">
-            <div class="max-w-screen-xl mx-auto pt-20">
+            <div class="max-w-screen-xl mx-auto sm:pt-20">
                 <div class="flex flex-col items-start justify-center">
-                    <h2 class="gsap-fade text-[220px] font-bold text-white mb-4 leading-[0.8] ">Contact Me
+                    <h2
+                        class="gsap-fade lg:text-[220px] md:text-[120px] text-5xl font-bold text-white sm:mb-4 leading-[0.8] ">
+                        Contact Me
                     </h2>
                 </div>
-                <div class="grid grid-cols-2 items-start justify-center gap-18 py-12 max-w-7xl">
+                <div
+                    class="grid md:grid-cols-2 grid-cols-1 items-start justify-center gap-18 sm:py-12 py-6 pb-0 max-w-7xl">
                     <p
-                        class="gsap-fade text-xl text-white mb-8 max-w-lg pl-2 font-medium tracking-wide leading-relaxed">
+                        class="gsap-fade sm:text-xl text-lg text-white mb-8 max-w-lg pl-2 font-medium tracking-wide leading-relaxed">
                         Have a
                         question, idea,
                         or project in
@@ -701,9 +737,10 @@
                         Reach out to us and let's start building something amazing together. Whether it's a quick
                         inquiry or a full collaboration, we're just a message away.</p>
                     <div class="flex flex-col items-start justify-center gap-10">
-                        <div class="gsap-fade grid grid-cols-[auto_1fr] gap-10">
+                        <div class="gsap-fade grid grid-cols-[auto_1fr] sm:gap-10 gap-4">
                             <div>
-                                <Image class="mt-1" src="assets/images/location.svg" alt="self" width="50" height="50">
+                                <Image class="mt-1 w-6 sm:w-[50px]" src="assets/images/location.svg" alt="self"
+                                    width="50" height="50">
                             </div>
                             <div>
                                 <h4 class=" text-2xl font-semibold text-white uppercase">Address</h4>
@@ -711,9 +748,10 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="gsap-fade grid grid-cols-[auto_1fr] gap-10">
+                        <div class="gsap-fade grid grid-cols-[auto_1fr] sm:gap-10 gap-4">
                             <div>
-                                <Image class="mt-1" src="assets/images/mail.svg" alt="self" width="40" height="40">
+                                <Image class="mt-1 w-6 sm:w-[40px]" src="assets/images/mail.svg" alt="self" width="40"
+                                    height="40">
                             </div>
                             <div>
                                 <h4 class=" text-2xl font-semibold text-white uppercase">E-mail</h4>
@@ -727,9 +765,10 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="gsap-fade grid grid-cols-[auto_1fr] gap-10">
+                        <div class="gsap-fade grid grid-cols-[auto_1fr] sm:gap-10 gap-4">
                             <div>
-                                <Image class="mt-2" src="assets/images/phone.svg" alt="self" width="40" height="40">
+                                <Image class="mt-2 w-6 sm:w-[40px]" src="assets/images/phone.svg" alt="self" width="40"
+                                    height="40">
                             </div>
                             <div>
                                 <h4 class=" text-2xl font-semibold text-white uppercase">Call Me</h4>
