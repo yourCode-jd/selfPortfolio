@@ -88,10 +88,10 @@
             </div> -->
 
             <!-- Hero Content -->
-            <div class="flex items-center justify-center lg:h-screen h-[50vh] relative overflow-hidden ">
+            <div class="flex items-center justify-center lg:h-screen h-[30vh] relative overflow-hidden ">
                 <a href="#" class="relative">
                     <h1 id="bannerTitle"
-                        class="text-[50px] md:text-[150px] lg:text-[200px] xl:text-[200px] font-bold uppercase mt-20 lg:mt-0">
+                        class="text-[50px] md:text-[150px] lg:text-[200px] xl:text-[200px] font-bold uppercase mt-32 lg:mt-0">
                         github</h1>
                 </a>
             </div>
@@ -101,7 +101,7 @@
 
     <!-- container where projects render -->
     <section class="max-w-screen-2xl mx-auto px-5 md:px-8 lg:px-12">
-        <div id="cardsGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-10"></div>
+        <div id="cardsGrid" class="grid grid-cols-1 lg:grid-cols-2 gap-10"></div>
     </section>
     </main>
 
@@ -114,7 +114,8 @@
                 class="absolute top-3 right-3 text-white text-lg z-20">✕</button>
 
             <div class="p-6">
-                <h3 id="modalTitle" class="text-2xl font-semibold mb-3 text-[#333333]"></h3>
+                <h3 id="modalTitle"
+                    class="sm:text-2xl text-lg leading-tight sm:leading-normal font-semibold mb-3 text-[#333333]"></h3>
 
                 <div class="mb-4">
                     <img id="modalMainImg" src="" alt=""
@@ -123,7 +124,8 @@
 
                 <div id="thumbs" class="flex gap-3 overflow-x-auto justify-center py-1"></div>
 
-                <div class="mt-8 flex items-center gap-3">
+                <div
+                    class="mt-4 sm:mt-8 flex flex-wrap sm:flex-nowrap items-center gap-3 justify-center sm:justify-normal">
 
                     <a id="modalPreviewLink" href="#" target="_blank" rel="noopener"
                         class="inline-block px-3 py-2 bg-black text-white rounded font-semibold text-center hover:bg-[#191919] transition-all">
@@ -137,9 +139,9 @@
                     </a>
 
                     <button id="prevBtn"
-                        class="px-3 py-2 border border-gray-300 rounded hover:bg-black hover:text-white font-semibold transition-all">Prev</button>
+                        class="px-3 sm:py-2 py-1 border border-gray-300 rounded hover:bg-black hover:text-white font-semibold transition-all">Prev</button>
                     <button id="nextBtn"
-                        class="px-3 py-2 border border-gray-300 rounded hover:bg-black hover:text-white font-semibold transition-all">Next</button>
+                        class="px-3 sm:py-2 py-1 border border-gray-300 rounded hover:bg-black hover:text-white font-semibold transition-all">Next</button>
                 </div>
             </div>
         </div>
@@ -181,12 +183,12 @@
                 <img src="${pin}" alt="${escapeHtml(p.user)}/${escapeHtml(p.repo)}" class="w-full rounded-md hidden" loading="lazy" />
                 </a>
 
-                <div class="h-80 mb-3 flex items-center justify-center ">
+                <div class="xl:h-80 mb-3 flex items-center justify-center ">
                 ${preview ? `<img src="${preview}" alt="${escapeHtml(p.title || p.repo)} screenshot" class="w-full h-full  object-contain " loading="lazy" />` : `<div class="text-gray-400">No Screenshot</div>`}
                 </div>
 
-                <h3 class="font-semibold text-2xl text-white mb-1 leading-tight">${escapeHtml(p.title || p.repo)}</h3>
-                <p class="text-base text-white mb-6">${escapeHtml(p.description || "")}</p>
+                <h3 class="font-semibold sm:text-2xl text-lg text-white mb-1 leading-tight">${escapeHtml(p.title || p.repo)}</h3>
+                <p class="text-base text-white sm:mb-6 mb-3">${escapeHtml(p.description || "")}</p>
 
                 <div class="flex flex-wrap gap-2 text-sm font-semibold mt-auto text-[#333333]">
                 ${(p.tags || []).map(t => `<span class="px-2 py-1 bg-sky-50 rounded-sm">${escapeHtml(t)}</span>`).join("")}
@@ -266,7 +268,7 @@
             const firstSrc = images[0];
             const wrapHtml = `
             <div class="mb-4 modal-img-wrap">
-                <img id="modalMainImg" src="${firstSrc}" alt="${firstSrc}" class="w-full h-72 md:h-96 object-contain bg-gray-200 rounded" />
+                <img id="modalMainImg" src="${firstSrc}" alt="${firstSrc}" class="w-full h-40 md:h-96 object-contain bg-gray-200 rounded" />
                 <div class="modal-zoom-overlay" aria-hidden="true">
                 <div class="modal-zoom-icon" title="Open original image in new tab" aria-hidden="true">
                     <!-- simple magnifier SVG -->
@@ -291,7 +293,7 @@
             });
 
             // thumbnails
-            thumbs.innerHTML = images.map((img, i) => `<img src="${img}" data-index="${i}" class="w-20 h-12 object-cover rounded cursor-pointer " loading="lazy" />`).join("");
+            thumbs.innerHTML = images.map((img, i) => `<img src="${img}" data-index="${i}" class="sm:w-20 w-8 sm:h-12 h-8 object-cover rounded cursor-pointer " loading="lazy" />`).join("");
             updateActiveThumb(0);
             prevBtn.disabled = images.length <= 1;
             nextBtn.disabled = images.length <= 1;
