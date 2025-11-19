@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favIcon.png">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Rajdhani -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>My Projects | Portfolio</title>
+</head>
+
+<body class="font-rajdhani github">
+    <div class="Sline rotate-0 fixed -top-1/2 left-10 w-[2px] h-full bg-white bg-opacity-0 z-10">
+        <div class="scroll-indicator w-full h-[50%] bg-gradient-to-t from-white to-transparent opacity-70">
+        </div>
+    </div>
+    <div class="Sline rotate-0 fixed -top-1/2 right-10 w-[2px] h-full bg-white bg-opacity-0 z-10">
+        <div class="scroll-indicator w-full h-[50%] bg-gradient-to-t from-white to-transparent opacity-70">
+        </div>
+    </div>
+
+    <!-- Cursor -->
+
+    <div id="customCursor"
+        class="fixed top-0 left-0 w-8 h-8 rounded-full bg-[#7A73D1] pointer-events-none z-50 transition-all duration-200 ease-out mix-blend-multiply text-white text-[10px] flex items-center justify-center">
+        <span id="cursorText"></span>
+    </div>
+
+    <!-- Header -->
+    <section class="p-0">
+        <div class="px-5 md:px-8 lg:px-12">
+            <svg class="hidden lg:block absolute top-1/2 -translate-y-1/2 left-0 rotate-90 opacity-20 blur-md"
+                width="900" height="900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.559 512.559"
+                xml:space="preserve">
+                <path style="fill:#fff" d="M502.893 503.853H7.96L255.427 8.919z" transform="translate(1)" />
+                <path style="fill:#fff"
+                    d="M502.893 512.386H7.96c-2.56 0-5.973-1.707-7.68-4.267s-1.707-5.973 0-8.533L247.747 4.653c2.56-5.973 11.947-5.973 15.36 0l247.467 494.933c1.707 2.56.853 5.973 0 8.533-.854 2.56-5.121 4.267-7.681 4.267m-481.28-17.067H489.24L255.427 27.693z"
+                    transform="translate(1)" />
+            </svg>
+            <!-- Navigation -->
+            <nav
+                class="absolute px-5 md:px-8 lg:px-12 flex items-center justify-between py-5 left-0 w-full bg-[#3A4D39] bg-opacity-5 backdrop-blur-5xl z-20">
+                <!-- Logo -->
+                <a href="index.html" class="text-4xl font-bold uppercase cursor-pointer text-white">JD</a>
+                <!-- Hamburger -->
+                <div id="Hamburger" class="lg:w-10 w-8 h-auto flex flex-col gap-2 cursor-pointer z-10"
+                    onclick="toggleHighlight(), toggleCross()">
+                    <span class="w-full h-1 rounded bg-white"></span>
+                    <span class="w-full h-1 rounded bg-white"></span>
+                    <span class="w-full h-1 rounded bg-white"></span>
+                </div>
+                <!-- Menu -->
+                <div id="slideNavigation" class="flex items-center gap-6 relative">
+                    <!-- <video autoplay muted loop playsinline class="absolute w-full h-full object-cover z-[-1]">
+                        <source src="assets/images/menuVideo3.mp4" type="video/mp4" />
+                    </video> -->
+                    <a href="index.html"
+                        class="text-white hover:text-[#211c84] lg:text-8xl md:text-6xl text-4xl font-bold uppercase transition-all">Home</a>
+                    <a href="./about.html"
+                        class="text-white hover:text-[#211c84] lg:text-8xl md:text-6xl text-4xl font-bold uppercase transition-all">About</a>
+                    <a href="./contact.html"
+                        class="text-white hover:text-[#211c84] lg:text-8xl md:text-6xl text-4xl font-bold uppercase transition-all ">Contact</a>
+                    <a href="./portfolio.html"
+                        class="text-white hover:text-[#211c84] lg:text-8xl md:text-6xl text-4xl font-bold uppercase transition-all ">Portfolio</a>
+                    <a href="./github.html"
+                        class="text-white hover:text-[#211c84] lg:text-8xl md:text-6xl text-4xl font-bold uppercase transition-all ">My
+                        Projects</a>
+                </div>
+            </nav>
+
+            <!-- banner-circle -->
+            <!-- <div class="tmp-banner-circle">
+                <div class="tmp-banner-circle-1"></div>
+                <div class="tmp-banner-circle-2"></div>
+                <div class="tmp-banner-circle-3"></div>
+                <div class="tmp-banner-circle-4"></div>
+            </div> -->
+
+            <!-- Hero Content -->
+            <div class="flex items-center justify-center lg:h-screen h-[50vh] relative overflow-hidden ">
+                <a href="#" class="relative">
+                    <h1 id="bannerTitle"
+                        class="text-[50px] md:text-[150px] lg:text-[200px] xl:text-[200px] font-bold uppercase mt-20 lg:mt-0">
+                        github</h1>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- container where projects render -->
+    <section class="max-w-screen-2xl mx-auto px-5 md:px-8 lg:px-12">
+        <div id="cardsGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-10"></div>
+    </section>
+    </main>
+
+    <!-- modal gallery -->
+    <div id="modal" class="fixed inset-0 z-50 hidden items-center justify-center px-4">
+        <div class="absolute inset-0 bg-black/50" onclick="closeModal()"></div>
+
+        <div class="relative bg-white rounded-2xl shadow-lg max-w-4xl w-full mx-auto overflow-hidden">
+            <button aria-label="Close" onclick="closeModal()"
+                class="absolute top-3 right-3 text-white text-lg z-20">✕</button>
+
+            <div class="p-6">
+                <h3 id="modalTitle" class="text-2xl font-semibold mb-3 text-[#333333]"></h3>
+
+                <div class="mb-4">
+                    <img id="modalMainImg" src="" alt=""
+                        class="w-full h-72 md:h-96 object-contain bg-gray-50 rounded" />
+                </div>
+
+                <div id="thumbs" class="flex gap-3 overflow-x-auto justify-center py-1"></div>
+
+                <div class="mt-8 flex items-center gap-3">
+
+                    <a id="modalPreviewLink" href="#" target="_blank" rel="noopener"
+                        class="inline-block px-3 py-2 bg-black text-white rounded font-semibold text-center hover:bg-[#191919] transition-all">
+                        Project Preview
+                    </a>
+
+                    <a id="repoLink"
+                        class="px-3 py-2 border border-gray-300 rounded opacity-20 mx-auto bg-black text-white hover:-translate-y-1 transition-all font-semibold pointer-events-none "
+                        target="_blank" rel="noopener">Open
+                        on GitHub
+                    </a>
+
+                    <button id="prevBtn"
+                        class="px-3 py-2 border border-gray-300 rounded hover:bg-black hover:text-white font-semibold transition-all">Prev</button>
+                    <button id="nextBtn"
+                        class="px-3 py-2 border border-gray-300 rounded hover:bg-black hover:text-white font-semibold transition-all">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ---------- helpers ----------
+        function makePinUrl(user, repo, theme = "transparent") {
+            const url = new URL("https://github-readme-stats.vercel.app/api/pin/");
+            url.searchParams.set("username", user);
+            url.searchParams.set("repo", repo);
+            url.searchParams.set("theme", theme);
+            return url.toString();
+        }
+        function escapeHtml(s) { if (!s) return ""; return String(s).replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[m]); }
+
+        // ---------- load projects.json ----------
+        async function loadProjects() {
+            try {
+                const res = await fetch("/projects.json");
+                if (!res.ok) throw new Error("Failed to fetch projects.json");
+                const projects = await res.json();
+                renderProjects(projects);
+            } catch (err) {
+                console.error(err);
+                document.getElementById("cardsGrid").innerHTML = `<div class="col-span-full text-red-600">Error loading projects.json</div>`;
+            }
+        }
+
+        // ---------- render ----------
+        function renderProjects(list) {
+            const grid = document.getElementById("cardsGrid");
+            grid.innerHTML = list.map((p, i) => {
+                const pin = makePinUrl(p.user, p.repo);
+                const preview = (p.screenshots && p.screenshots.length) ? p.screenshots[0] : "";
+                return `
+            <article class="text-content flex flex-col h-full bg-white/10 backdrop-blur-xs rounded-2xl p-6 shadow hover:shadow-lg hover:bg-white/20 transition-all  cursor-pointer " data-idx="${i}" tabindex="0" aria-label="${escapeHtml(p.title || p.repo)}">
+                <a href="https://github.com/${escapeHtml(p.user)}/${escapeHtml(p.repo)}" target="_blank" rel="noopener noreferrer" class="block mb-0 " onclick="event.stopPropagation()">
+                <img src="${pin}" alt="${escapeHtml(p.user)}/${escapeHtml(p.repo)}" class="w-full rounded-md hidden" loading="lazy" />
+                </a>
+
+                <div class="h-80 mb-3 flex items-center justify-center ">
+                ${preview ? `<img src="${preview}" alt="${escapeHtml(p.title || p.repo)} screenshot" class="w-full h-full  object-contain " loading="lazy" />` : `<div class="text-gray-400">No Screenshot</div>`}
+                </div>
+
+                <h3 class="font-semibold text-2xl text-white mb-1 leading-tight">${escapeHtml(p.title || p.repo)}</h3>
+                <p class="text-base text-white mb-6">${escapeHtml(p.description || "")}</p>
+
+                <div class="flex flex-wrap gap-2 text-sm font-semibold mt-auto text-[#333333]">
+                ${(p.tags || []).map(t => `<span class="px-2 py-1 bg-sky-50 rounded-sm">${escapeHtml(t)}</span>`).join("")}
+                </div>
+                
+            </article>
+            `;
+            }).join("");
+
+            // attach click handlers for modal
+            grid.querySelectorAll("article[data-idx]").forEach(el => {
+                el.addEventListener("click", () => {
+                    const idx = Number(el.getAttribute("data-idx"));
+                    openModalFromProjects(list, idx);
+                });
+                el.addEventListener("keydown", (e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        const idx = Number(el.getAttribute("data-idx"));
+                        openModalFromProjects(list, idx);
+                    }
+                });
+            });
+        }
+
+        // ---------- modal gallery ----------
+        let activeProject = null;
+        let activeImageIndex = 0;
+        const modalEl = document.getElementById("modal");
+        const modalTitle = document.getElementById("modalTitle");
+        let modalMainImg = document.getElementById("modalMainImg");
+        const thumbs = document.getElementById("thumbs");
+        const repoLink = document.getElementById("repoLink");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+
+        function openModalFromProjects(projects, idx) {
+            const proj = projects[idx];
+            if (!proj) return;
+
+            activeProject = proj;
+            activeImageIndex = 0;
+
+            modalTitle.textContent = proj.title || (proj.user + "/" + proj.repo);
+            repoLink.href = `https://github.com/${proj.user}/${proj.repo}`;
+
+            const modalPreviewLink = document.getElementById("modalPreviewLink");
+            modalPreviewLink.href = proj.demo || proj.url || "";
+
+            renderModalImages(proj.screenshots || []);
+
+            modalEl.classList.remove("hidden");
+            modalEl.classList.add("flex");
+            document.body.style.overflow = "hidden";
+        }
+
+
+        function closeModal() {
+            modalEl.classList.add("hidden"); modalEl.classList.remove("flex");
+            document.body.style.overflow = "";
+            activeProject = null; activeImageIndex = 0;
+        }
+
+        function renderModalImages(images) {
+            if (!images || images.length === 0) {
+                // show placeholder text and disable nav
+                modalMainImg.src = "";
+                modalMainImg.alt = "No screenshots";
+                modalMainImg.parentElement.innerHTML = `<div class="mb-4 text-gray-500">No screenshots available for this project.</div>`;
+                thumbs.innerHTML = "";
+                prevBtn.disabled = true; nextBtn.disabled = true;
+                return;
+            }
+
+            // Build a wrapping container so we can show overlay on hover
+            // Note: keep the img id "modalMainImg" so existing code can find it
+            const firstSrc = images[0];
+            const wrapHtml = `
+            <div class="mb-4 modal-img-wrap">
+                <img id="modalMainImg" src="${firstSrc}" alt="${firstSrc}" class="w-full h-72 md:h-96 object-contain bg-gray-200 rounded" />
+                <div class="modal-zoom-overlay" aria-hidden="true">
+                <div class="modal-zoom-icon" title="Open original image in new tab" aria-hidden="true">
+                    <!-- simple magnifier SVG -->
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                </div>
+            </div>
+            `;
+            modalMainImg.parentElement.innerHTML = wrapHtml;
+            modalMainImg = document.getElementById("modalMainImg");
+
+            // open the original image in a new tab when main image is clicked
+            modalMainImg.addEventListener("click", (ev) => {
+                // use the currently active project's screenshots array
+                const imgs = activeProject?.screenshots || [];
+                const url = imgs[activeImageIndex] || modalMainImg.src;
+                // open in new tab with noopener for safety
+                window.open(url, "_blank", "noopener");
+            });
+
+            // thumbnails
+            thumbs.innerHTML = images.map((img, i) => `<img src="${img}" data-index="${i}" class="w-20 h-12 object-cover rounded cursor-pointer " loading="lazy" />`).join("");
+            updateActiveThumb(0);
+            prevBtn.disabled = images.length <= 1;
+            nextBtn.disabled = images.length <= 1;
+
+            thumbs.querySelectorAll("img[data-index]").forEach(t => {
+                t.addEventListener("click", (e) => {
+                    const index = Number(t.getAttribute("data-index"));
+                    setActiveImage(index);
+                });
+            });
+        }
+
+        function setActiveImage(i) {
+            const imgs = activeProject?.screenshots || [];
+            if (!imgs.length) return;
+            if (i < 0) i = 0;
+            if (i >= imgs.length) i = imgs.length - 1;
+            activeImageIndex = i;
+            const main = document.getElementById("modalMainImg");
+            if (main) { main.src = imgs[i]; main.alt = imgs[i]; }
+            updateActiveThumb(i);
+        }
+
+
+        function updateActiveThumb(i) {
+            thumbs.querySelectorAll("img").forEach(el => el.classList.remove("thumb-active"));
+            const active = thumbs.querySelector(`img[data-index='${i}']`);
+            if (active) { active.classList.add("thumb-active"); active.scrollIntoView({ inline: "center", behavior: "smooth", block: "nearest" }); }
+        }
+
+        prevBtn.addEventListener("click", () => setActiveImage(activeImageIndex - 1));
+        nextBtn.addEventListener("click", () => setActiveImage(activeImageIndex + 1));
+
+        // keyboard nav
+        window.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") closeModal();
+            if (activeProject && e.key === "ArrowLeft") setActiveImage(activeImageIndex - 1);
+            if (activeProject && e.key === "ArrowRight") setActiveImage(activeImageIndex + 1);
+        });
+
+        // prevent clicks inside modal content from closing
+        document.querySelectorAll("#modal > div > div").forEach(node => node.addEventListener("click", e => e.stopPropagation()));
+
+        // ---------- start ----------
+        loadProjects();
+    </script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://unpkg.com/gsap@3/dist/MotionPathPlugin.min.js"></script>
+    <script src="custom.js"></script>
+</body>
+
+</html>

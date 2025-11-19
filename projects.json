@@ -6,9 +6,139 @@
     "description": "A sleek AI landing page that highlights why choose AI and how it works with smooth animations and minimal UI.",
     "screenshots": [
       "assets/screenshots/Ai_desktop.png",
-      "assets/screenshots/Ai_mobile.png"
+      "assets/screenshots/Ai_mobile.png",
+      "assets/screenshots/Ai_github.png"
     ],
-    "tags": ["HTML5", "CSS", "Tailwind", "GSAP", "JavaScript", "Git"]
+    "tags": ["HTML5", "CSS", "Tailwind", "GSAP", "JavaScript", "Git"],
+    "url": "https://yourcode-jd.github.io/Aivora/"
+
+  },
+    {
+    "repo": "Serum",
+    "user": "yourCode-jd",
+    "title": "Nature’s touch, modern results.",
+    "description": "A plant-forward serum that soothes, hydrates, and strengthens skin using clean, transparent ingredients.",
+    "screenshots": [
+      "assets/screenshots/Serum_desktop.png",
+      "assets/screenshots/Serum_mobile.png",
+      "assets/screenshots/Serum_github.png"
+    ],
+    "tags": [
+      "HTML5",
+      "CSS3",
+      "Tailwind",
+      "GSAP / ScrollTrigger",
+      "JavaScript",
+      "Git"
+    ],
+    "url": "https://yourcode-jd.github.io/Serum/"
+  },
+
+    {
+    "repo": "AudioQuest",
+    "user": "yourCode-jd",
+    "title": "Colorful soundscapes, instantly.",
+    "description": "A visually rich landing page that highlights albums, tour dates, and email capture.",
+    "screenshots": [
+      "assets/screenshots/AudioQuest_desktop.png",
+      "assets/screenshots/AudioQuest_mobile.png",
+      "assets/screenshots/AudioQuest_github.png"
+    ],
+    "tags": ["HTML5", "CSS3", "Tailwind", "Bootstrap", "JavaScript", "Git"],
+    "url": "https://yourcode-jd.github.io/AudioQuest/"
+  },
+    {
+    "repo": "LumaFrames",
+    "user": "yourCode-jd",
+    "title": "Where Every Photo Finds Its Perfect Frame.",
+    "description": "A clean and modern photo-frame eCommerce interface built with Next.js and Tailwind CSS. Showcasing a variety of customizable frames to enhance and protect your cherished memories.",
+    "screenshots": [
+      "assets/screenshots/LumaFrames_desktop.png",
+      "assets/screenshots/LumaFrames_mobile.png",
+      "assets/screenshots/LumaFrames_collection.png",
+      "assets/screenshots/LumaFrames_Pdetail.png",
+      "assets/screenshots/LumaFrames_github.png"
+    ],
+    "tags": ["HTML5", "CSS3", "Tailwind", "React / NextJS", "JavaScript", "Git"],
+    "url": "https://yourcode-jd.github.io/LumaFrames/"
+  },
+  {
+    "repo": "PulseFit Coach",
+    "user": "yourCode-jd",
+    "title": "Personal coaching. Measurable gains.",
+    "description": "Professional landing page with clear pricing, short coach bio, and a conversion-focused enquiry form.",
+    "screenshots": [
+      "assets/screenshots/PulseFit_desktop.png",
+      "assets/screenshots/PulseFit_mobile.png",
+      "assets/screenshots/PulseFit_github.png"
+    ],
+    "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"],
+    "url": "https://yourcode-jd.github.io/PulseFitCoach/"
+  },
+     {
+    "repo": "Luxe Loom",
+    "user": "yourCode-jd",
+    "title": "Woven luxury, effortless presence.",
+    "description": "Designer furniture that merges artisanal texture with minimalist, high-end silhouettes.",
+    "screenshots": [
+      "assets/screenshots/Luxe_Loom_desktop.png",
+      "assets/screenshots/Luxe_Loom_mobile.png",
+      "assets/screenshots/Luxe_Loom_github.png"
+    ],
+    "tags": ["HTML5", "CSS3", "Tailwind", "React / NextJS", "JavaScript", "Git"],
+    "url": "https://yourcode-jd.github.io/Luxe_Loom/"
+  },
+    {
+    "repo": "HomeFrame",
+    "user": "yourCode-jd",
+    "title": "Styled for living, designed for you.",
+    "description": "Minimal layout focused on lifestyle photography, responsive cards and a newsletter CTA for early access.",
+    "screenshots": [
+      "assets/screenshots/HomeFrame_desktop.png",
+      "assets/screenshots/HomeFrame_mobile.png",
+      "assets/screenshots/HomeFrame_github.png"
+    ],
+    "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"],
+    "url": "https://yourcode-jd.github.io/HomeFrame/"
+  },
+    {
+    "repo": "SprintCV",
+    "user": "yourCode-jd",
+    "title": "Built for speed — minimal assets, maximum impression.",
+    "description": "Performance-optimized single page with lazy media, critical CSS, and tiny JS footprint.",
+    "screenshots": [
+      "assets/screenshots/SprintCV_desktop.png",
+      "assets/screenshots/SprintCV_mobile.png",
+      "assets/screenshots/SprintCV_github.png"
+    ],
+    "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"],
+    "url": "https://yourcode-jd.github.io/SprintCV/"
+  },
+    {
+    "repo": "NourishMotion",
+    "user": "yourCode-jd",
+    "title": "Fuel well. Move well. Feel well.",
+    "description": "A practical wellness system combining mindful habits, nutrition coaching, movement programming, and recovery rituals.",
+    "screenshots": [
+      "assets/screenshots/NourishMotion_desktop.png",
+      "assets/screenshots/NourishMotion_mobile.png",
+      "assets/screenshots/NourishMotion_github.png"
+    ],
+    "tags": ["HTML5", "CSS3", "Tailwind", "React / NextJS", "JavaScript", "Git"],
+    "url": "https://yourcode-jd.github.io/NourishMotion/"
+  },
+   {
+    "repo": "Aura Attire",
+    "user": "yourCode-jd",
+    "title": "Dress your mood.",
+    "description": "A playful, image-forward landing experience that helps customers discover outfits by vibe and occasion.",
+    "screenshots": [
+      "assets/screenshots/AuraAttire_desktop.png",
+      "assets/screenshots/AuraAttire_mobile.png",
+      "assets/screenshots/AuraAttire_github.png"
+    ],
+    "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"],  
+    "url": "https://yourcode-jd.github.io/AuraAttire/"
   },
   {
     "repo": "BrewAura",
@@ -17,165 +147,21 @@
     "description": "An immersive hero with GSAP-driven entrance and scrubbed video playback that feels like a mini product film.",
     "screenshots": [
       "assets/screenshots/BrewAura_desktop.png",
-      "assets/screenshots/BrewAura_mobile.png"
+      "assets/screenshots/BrewAura_mobile.png",
+      "assets/screenshots/BrewAura_github.png"
     ],
-    "tags": ["HTML5", "CSS", "Tailwind", "GSAP", "JavaScript", "Git"]
+    "tags": ["HTML5", "CSS", "Tailwind", "GSAP", "JavaScript", "Git"],
+    "url": "https://yourcode-jd.github.io/BrewAura/"
   },
-  {
-    "repo": "AutoCareX",
-    "user": "yourCode-jd",
-    "title": "Your Car, Our Priority.",
-    "description": "A sleek and responsive landing page for a premium car service center, built to showcase offerings, customer trust, and easy booking options.",
-    "screenshots": [
-      "assets/screenshots/AutoCareX_desktop.png",
-      "assets/screenshots/AutoCareX_mobile.png"
-    ],
-    "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"]
-  },
-  {
-    "repo": "MarketMuse Studio",
-    "user": "yourCode-jd",
-    "title": "Smart campaigns. Real results.",
-    "description": "Elegant landing experience combining strategic messaging and visual storytelling to boost campaign ROIs.",
-    "screenshots": [
-      "assets/screenshots/MarketMuse_desktop.png",
-      "assets/screenshots/MarketMuse_mobile.png"
-    ],
-    "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"]
-  },
-  {
-    "repo": "BottleMotion",
-    "user": "yourCode-jd",
-    "title": "Sip. Scroll. Smile.",
-    "description": "Interactive landing page showcasing a beverage bottle with smooth GSAP scroll animations and micro-interactions",
-    "screenshots": [
-      "assets/screenshots/BottleMotion_desktop.png",
-      "assets/screenshots/BottleMotion_mobile.png"
-    ],
-    "tags": [
-      "HTML5",
-      "CSS3",
-      "Tailwind",
-      "GSAP / ScrollTrigger",
-      "JavaScript",
-      "Git"
-    ]
-  },
-  {
-    "repo": "Aura Attire",
-    "user": "yourCode-jd",
-    "title": "Dress your mood.",
-    "description": "A playful, image-forward landing experience that helps customers discover outfits by vibe and occasion.",
-    "screenshots": [
-      "assets/screenshots/AuraAttire_desktop.png",
-      "assets/screenshots/AuraAttire_mobile.png"
-    ],
-    "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"]
-  },
-  {
-    "repo": "FitPulse",
-    "user": "yourCode-jd",
-    "title": "Transform your energy. Transform your life.",
-    "description": "A modern fitness landing page built to motivate users toward a healthier lifestyle, featuring smooth sections, call-to-action elements, and engaging visuals.",
-    "screenshots": [
-      "assets/screenshots/FitPulse_desktop.png",
-      "assets/screenshots/FitPulse_mobile.png"
-    ],
-    "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"]
-  },
-  {
-    "repo": "HomeFrame",
-    "user": "yourCode-jd",
-    "title": "Styled for living, designed for you.",
-    "description": "Minimal layout focused on lifestyle photography, responsive cards and a newsletter CTA for early access.",
-    "screenshots": [
-      "assets/screenshots/HomeFrame_desktop.png",
-      "assets/screenshots/HomeFrame_mobile.png"
-    ],
-    "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"]
-  },
-  {
-    "repo": "AudioQuest",
-    "user": "yourCode-jd",
-    "title": "Colorful soundscapes, instantly.",
-    "description": "A visually rich landing page that highlights albums, tour dates, and email capture.",
-    "screenshots": [
-      "assets/screenshots/AudioQuest_desktop.png",
-      "assets/screenshots/AudioQuest_mobile.png"
-    ],
-    "tags": ["HTML5", "CSS3", "Tailwind", "Bootstrap", "JavaScript", "Git"]
-  },
-
-  {
-    "repo": "PulseFit Coach",
-    "user": "yourCode-jd",
-    "title": "Personal coaching. Measurable gains.",
-    "description": "Professional landing page with clear pricing, short coach bio, and a conversion-focused enquiry form.",
-    "screenshots": [
-      "assets/screenshots/PulseFit_desktop.png",
-      "assets/screenshots/PulseFit_mobile.png"
-    ],
-    "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"]
-  },
-  {
-    "repo": "SprintCV",
-    "user": "yourCode-jd",
-    "title": "Built for speed — minimal assets, maximum impression.",
-    "description": "Performance-optimized single page with lazy media, critical CSS, and tiny JS footprint.",
-    "screenshots": [
-      "assets/screenshots/SprintCV_desktop.png",
-      "assets/screenshots/SprintCV_mobile.png"
-    ],
-    "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"]
-  },
-  {
-    "repo": "Serum",
-    "user": "yourCode-jd",
-    "title": "Nature’s touch, modern results.",
-    "description": "A plant-forward serum that soothes, hydrates, and strengthens skin using clean, transparent ingredients.",
-    "screenshots": [
-      "assets/screenshots/Serum_desktop.png",
-      "assets/screenshots/Serum_mobile.png"
-    ],
-    "tags": [
-      "HTML5",
-      "CSS3",
-      "Tailwind",
-      "GSAP / ScrollTrigger",
-      "JavaScript",
-      "Git"
-    ]
-  },
-  {
-    "repo": "EverFrame Studio",
-    "user": "yourCode-jd",
-    "title": "Moments that last a lifetime.",
-    "description": "Elegant wedding and portrait photography with a focus on timeless storytelling.",
-    "screenshots": [
-      "assets/screenshots/EverFrame_desktop.png",
-      "assets/screenshots/EverFrame_mobile.png"
-    ],
-    "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"]
-  },
-  {
-    "repo": "CoreWave",
-    "user": "yourCode-jd",
-    "title": "Find your flow, build your core.",
-    "description": "Minimal, movement-first landing page emphasizing classes, benefits, and a fast sign-up funnel.",
-    "screenshots": [
-      "assets/screenshots/CoreWave_desktop.png",
-      "assets/screenshots/CoreWave_mobile.png"
-    ],
-    "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"]
-  },
-  {
+    {
     "repo": "FrameCraft",
     "user": "yourCode-jd",
     "title": "Personalize your space with art that reflects your style.",
-    "description": "A sleek, interactive product detail page that lets users customize wall art frames in real time — from frame type, color, size, to matting — with smooth transitions and a responsive design.",
+    "description": "A sleek, interactive product detail page that lets users customize wall art frames in real time.",
     "screenshots": [
       "assets/screenshots/FrameCraft_desktop.png",
-      "assets/screenshots/FrameCraft_mobile.png"
+      "assets/screenshots/FrameCraft_mobile.png",
+      "assets/screenshots/FrameCraft_github.png"
     ],
     "tags": [
       "HTML5",
@@ -185,30 +171,99 @@
       "Ai integration",
       "JavaScript",
       "Git"
-    ]
+    ],
+    "url": "https://yourcode-jd.github.io/FrameCraft/"
+  },
+    {
+    "repo": "EverFrame Studio",
+    "user": "yourCode-jd",
+    "title": "Moments that last a lifetime.",
+    "description": "Elegant wedding and portrait photography with a focus on timeless storytelling.",
+    "screenshots": [
+      "assets/screenshots/EverFrame_desktop.png",
+      "assets/screenshots/EverFrame_mobile.png",
+      "assets/screenshots/EverFrame_github.png"
+    ],
+    "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"],
+    "url": "https://yourcode-jd.github.io/EverFrameStudio/"
   },
   {
-    "repo": "NourishMotion",
+    "repo": "AutoCareX",
     "user": "yourCode-jd",
-    "title": "Fuel well. Move well. Feel well.",
-    "description": "A practical wellness system combining mindful habits, nutrition coaching, movement programming, and recovery rituals.",
+    "title": "Your Car, Our Priority.",
+    "description": "A sleek and responsive landing page for a premium car service center, built to showcase offerings, customer trust, and easy booking options.",
     "screenshots": [
-      "assets/screenshots/NourishMotion_desktop.png",
-      "assets/screenshots/NourishMotion_mobile.png"
+      "assets/screenshots/AutoCareX_desktop.png",
+      "assets/screenshots/AutoCareX_mobile.png",
+      "assets/screenshots/AutoCareX_github.png"
     ],
-    "tags": ["HTML5", "CSS3", "Tailwind", "React / NextJS", "JavaScript", "Git"]
+    "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"],
+    "url": "https://yourcode-jd.github.io/AutoCareX/"
   },
   {
-    "repo": "Luxe Loom",
+    "repo": "MarketMuse Studio",
     "user": "yourCode-jd",
-    "title": "Woven luxury, effortless presence.",
-    "description": "Designer furniture that merges artisanal texture with minimalist, high-end silhouettes.",
+    "title": "Smart campaigns. Real results.",
+    "description": "Elegant landing experience combining strategic messaging and visual storytelling to boost campaign ROIs.",
     "screenshots": [
-      "assets/screenshots/Luxe_Loom_desktop.png",
-      "assets/screenshots/Luxe_Loom_mobile.png"
+      "assets/screenshots/MarketMuse_desktop.png",
+      "assets/screenshots/MarketMuse_mobile.png",
+      "assets/screenshots/MarketMuse_github.png"
     ],
-    "tags": ["HTML5", "CSS3", "Tailwind", "React / NextJS", "JavaScript", "Git"]
+    "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"],
+    "url": "https://yourcode-jd.github.io/MarketMuseStudio/"
   },
+  {
+    "repo": "BottleMotion",
+    "user": "yourCode-jd",
+    "title": "Sip. Scroll. Smile.",
+    "description": "Interactive landing page showcasing a beverage bottle with smooth GSAP scroll animations and micro-interactions",
+    "screenshots": [
+      "assets/screenshots/BottleMotion_desktop.png",
+      "assets/screenshots/BottleMotion_mobile.png",
+      "assets/screenshots/BottleMotion_github.png"
+    ],
+    "tags": [
+      "HTML5",
+      "CSS3",
+      "Tailwind",
+      "GSAP / ScrollTrigger",
+      "JavaScript",
+      "Git"
+    ],
+    "url": "https://yourcode-jd.github.io/BottleMotion/"
+  },
+
+  {
+    "repo": "FitPulse",
+    "user": "yourCode-jd",
+    "title": "Transform your energy. Transform your life.",
+    "description": "A modern fitness landing page built to motivate users toward a healthier lifestyle, featuring smooth sections, call-to-action elements, and engaging visuals.",
+    "screenshots": [
+      "assets/screenshots/FitPulse_desktop.png",
+      "assets/screenshots/FitPulse_mobile.png",
+      "assets/screenshots/FitPulse_github.png"
+    ],
+    "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"],
+    "url": "https://yourcode-jd.github.io/FitPulse/"
+  },
+
+
+  {
+    "repo": "CoreWave",
+    "user": "yourCode-jd",
+    "title": "Find your flow, build your core.",
+    "description": "Minimal, movement-first landing page emphasizing classes, benefits, and a fast sign-up funnel.",
+    "screenshots": [
+      "assets/screenshots/CoreWave_desktop.png",
+      "assets/screenshots/CoreWave_mobile.png",
+      "assets/screenshots/CoreWave_github.png"
+    ],
+    "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"],
+    "url": "https://yourcode-jd.github.io/CoreWave/"
+  },
+
+
   {
     "repo": "LumenWave",
     "user": "yourCode-jd",
@@ -216,7 +271,8 @@
     "description": "A minimal portfolio celebrating vibrant portraits and motion — landing soon with a purple-pink wave reveal.",
     "screenshots": [
       "assets/screenshots/LumenWave_desktop.png",
-      "assets/screenshots/LumenWave_mobile.png"
+      "assets/screenshots/LumenWave_mobile.png",
+      "assets/screenshots/LumenWave_github.png"
     ],
     "tags": [
       "Inprogress",
@@ -227,7 +283,8 @@
       "JavaScript",
       "Animations",
       "Git"
-    ]
+    ],
+    "url": "https://yourcode-jd.github.io/LumenWave/"
   },
   {
     "repo": "Clothora",
@@ -236,9 +293,11 @@
     "description": "A fashion-forward landing page combining motion design and minimalism to deliver a luxurious, brand-focused web experience.",
     "screenshots": [
       "assets/screenshots/Clothora_desktop.png",
-      "assets/screenshots/Clothora_mobile.png"
+      "assets/screenshots/Clothora_mobile.png",
+      "assets/screenshots/Clothora_github.png"
     ],
-    "tags": ["HTML5", "CSS3", "Tailwind", "React / NextJS", "JavaScript", "Git"]
+    "tags": ["HTML5", "CSS3", "Tailwind", "React / NextJS", "JavaScript", "Git"],
+    "url": "https://yourcode-jd.github.io/Clothora/"
   },
   {
     "repo": "TechSphere",
@@ -247,19 +306,11 @@
     "description": "A modern and responsive technology landing page built with HTML, CSS, Bootstrap, and JavaScript.",
     "screenshots": [
       "assets/screenshots/techSphere_desktop.png",
-      "assets/screenshots/techSphere_mobile.png"
+      "assets/screenshots/techSphere_mobile.png",
+      "assets/screenshots/techSphere_github.png"
     ],
-    "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"]
-  },
-  {
-    "repo": "LumaFrames",
-    "user": "yourCode-jd",
-    "title": "Where Every Photo Finds Its Perfect Frame.",
-    "description": "A clean and modern photo-frame eCommerce interface built with Next.js and Tailwind CSS. Showcasing a variety of customizable frames to enhance and protect your cherished memories.",
-    "screenshots": [
-      "assets/screenshots/LumaFrames_desktop.png",
-      "assets/screenshots/LumaFrames_mobile.png"
-    ],
-    "tags": ["HTML5", "CSS3", "Tailwind", "React / NextJS", "JavaScript", "Git"]
+    "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"],
+    "url": "https://yourcode-jd.github.io/Technology/"
   }
+
 ]

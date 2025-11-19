@@ -41,6 +41,10 @@ body.portfolio {
     background: linear-gradient(300deg, rgba(252, 70, 107, 1) 0%, rgba(63, 94, 251, 1) 35%, rgba(252, 70, 107, 1) 100%);
 }
 
+body.github {
+    background-image: linear-gradient(to left, #536dfe, #304ffe, #1a237e);
+}
+
 body::-webkit-scrollbar {
     width: 0;
     background: transparent;
@@ -97,7 +101,7 @@ section {
 }
 
 #slideNavigation.slideMenu {
-    height: 890px;
+    height: 100%;
 }
 
 #slideNavigation.slideMenu::before {
@@ -478,6 +482,58 @@ small {
     mix-blend-mode: color;
 }
 
+
+/* modal main image container + zoom overlay */
+.modal-img-wrap {
+    position: relative;
+    display: block;
+}
+
+.modal-img-wrap img {
+    cursor: zoom-in;
+    display: block;
+}
+
+.modal-zoom-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .18s ease;
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0));
+}
+
+.modal-img-wrap:hover .modal-zoom-overlay {
+    opacity: 1;
+    pointer-events: none;
+    /* clicks still hit the image */
+}
+
+.modal-zoom-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.45);
+    color: white;
+    font-size: 20px;
+    transform: scale(1);
+    transition: transform .12s ease;
+}
+
+.modal-img-wrap:hover .modal-zoom-icon {
+    transform: scale(1.06);
+}
+
+/* active thumbnail style */
+.thumb-active {
+    box-shadow: 0 0 0 3px rgba(17, 24, 39, 0.20);
+}
 
 @media screen and (max-width: 1023px) {
 
