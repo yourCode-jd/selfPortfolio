@@ -159,7 +159,7 @@
         // ---------- load projects.json ----------
         async function loadProjects() {
             try {
-                const res = await fetch("projects.json");
+                const res = await fetch("https://username.github.io/projects.json");
                 if (!res.ok) throw new Error("Failed to fetch projects.json");
                 const projects = await res.json();
                 renderProjects(projects);
