@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+  <style>
+    :root {
+      --icon-color: #000; /* Light mode text */
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --icon-color: #fff; /* Dark mode text */
+      }
+    }
+  </style>
+
+  <!-- Background (optional) -->
+  <rect width="100" height="100" fill="transparent"/>
+
+  <!-- Your Text -->
+  <text
+    x="50%"
+    y="55%"
+    font-size="70"
+    font-family="Rajdhani, sans-serif"
+    text-anchor="middle"
+    fill="var(--icon-color)"
+    dominant-baseline="middle"
+    font-weight="700"
+  >
+    JD
+  </text>
+</svg>
