@@ -318,8 +318,8 @@
     "title": "A clean and responsive landing page for showcasing mobile or web applications.",
     "description": "AppLab is a fully responsive and modern landing page built using HTML, CSS, JavaScript, and Bootstrap.",
     "screenshots": [
-      "assets/screenshots/AppLab.desktop.png",
-      "assets/screenshots/AppLab.mobile.png"
+      "assets/screenshots/AppLab_desktop.png",
+      "assets/screenshots/AppLab_mobile.png"
     ],
     "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"],
     "url": "https://yourcode-jd.github.io/AppLab/"
@@ -342,8 +342,8 @@
     "title": "A clean and modern financial service landing page.",
     "description": "This project is a responsive financial landing page built using HTML, CSS, JavaScript, and Bootstrap.",
     "screenshots": [
-      "assets/screenshots/finanza_desktop.png",
-      "assets/screenshots/finanza_mobile.png"
+      "assets/screenshots/Finanza_desktop.png",
+      "assets/screenshots/Finanza_mobile.png"
     ],
     "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"],
     "url": "https://yourcode-jd.github.io/Finanza/"
