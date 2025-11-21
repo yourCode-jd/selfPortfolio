@@ -311,6 +311,41 @@
     ],
     "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"],
     "url": "https://yourcode-jd.github.io/Technology/"
+  },
+      {
+    "repo": "AppLab",
+    "user": "yourCode-jd",
+    "title": "A clean and responsive landing page for showcasing mobile or web applications.",
+    "description": "AppLab is a fully responsive and modern landing page built using HTML, CSS, JavaScript, and Bootstrap.",
+    "screenshots": [
+      "assets/screenshots/AppLab.desktop.png",
+      "assets/screenshots/AppLab.mobile.png"
+    ],
+    "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"],
+    "url": "https://yourcode-jd.github.io/AppLab/"
+  },
+    {
+    "repo": "Masseneger",
+    "user": "yourCode-jd",
+    "title": "A sleek and simple messaging UI built with modern web technologies.",
+    "description": "Masseneger is a lightweight front-end messaging interface built using HTML, CSS, JavaScript, and Bootstrap.",
+    "screenshots": [
+      "assets/screenshots/messenger_desktop.png",
+      "assets/screenshots/messenger_mobile.png"
+    ],
+    "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"],
+    "url": "https://yourcode-jd.github.io/Messenger/"
+  },
+    {
+    "repo": "Finanza",
+    "user": "yourCode-jd",
+    "title": "A clean and modern financial service landing page.",
+    "description": "This project is a responsive financial landing page built using HTML, CSS, JavaScript, and Bootstrap.",
+    "screenshots": [
+      "assets/screenshots/finanza_desktop.png",
+      "assets/screenshots/finanza_mobile.png"
+    ],
+    "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"],
+    "url": "https://yourcode-jd.github.io/Finanza/"
   }
-
 ]
