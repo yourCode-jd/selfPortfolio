@@ -319,7 +319,8 @@
     "description": "AppLab is a fully responsive and modern landing page built using HTML, CSS, JavaScript, and Bootstrap.",
     "screenshots": [
       "assets/screenshots/AppLab_desktop.png",
-      "assets/screenshots/AppLab_mobile.png"
+      "assets/screenshots/AppLab_mobile.png",
+      "assets/screenshots/AppLab_github.png"
     ],
     "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"],
     "url": "https://yourcode-jd.github.io/AppLab/"
@@ -331,7 +332,8 @@
     "description": "Masseneger is a lightweight front-end messaging interface built using HTML, CSS, JavaScript, and Bootstrap.",
     "screenshots": [
       "assets/screenshots/messenger_desktop.png",
-      "assets/screenshots/messenger_mobile.png"
+      "assets/screenshots/messenger_mobile.png",
+      "assets/screenshots/messenger_github.png"
     ],
     "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"],
     "url": "https://yourcode-jd.github.io/Messenger/"
@@ -343,7 +345,8 @@
     "description": "This project is a responsive financial landing page built using HTML, CSS, JavaScript, and Bootstrap.",
     "screenshots": [
       "assets/screenshots/Finanza_desktop.png",
-      "assets/screenshots/Finanza_mobile.png"
+      "assets/screenshots/Finanza_mobile.png",
+      "assets/screenshots/Finanza_github.png"
     ],
     "tags": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Git"],
     "url": "https://yourcode-jd.github.io/Finanza/"
